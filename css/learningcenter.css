@@ -21,7 +21,7 @@ body {
   display: grid;
   grid-column-gap: 10px;
   grid-row-gap: 1rem;
-  grid-template: "nav les" auto / min-content;
+  grid-template: "nav les" auto / max-content;
   height: 100vh;
 }
 
