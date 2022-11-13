@@ -1,4 +1,21 @@
+@font-face {
+  src: url("./fonts/avenirnext-bold.eot");
+  src: url("./fonts/avenirnext-bold.woff2") format("woff2"),
+       url("./fonts/avenirnext-bold.woff") format("woff");
+  font-family: "AvenirNext-Bold";
+}
+
+@font-face {
+  src: url('/fonts/FernVariable-Italic-VF.woff2') format("woff2"),
+       url('/fonts/FernVariable-Italic-VF.woff') format("woff");
+  font-family: 'Fern Text';
+  font-style: italic;
+  font-weight: 400 800;
+}
+
 body {
+  font-family: 'Fern Text', 'Hoefler Text', serif;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   display: grid;
@@ -6,6 +23,14 @@ body {
   grid-row-gap: 1rem;
   grid-template: "nav les" auto / min-content;
   height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'AvenirNext-Bold';
+}
+
+h2 {
+  border-bottom: 5px solid currentColor;
 }
 
 nav {
