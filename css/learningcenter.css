@@ -61,7 +61,8 @@ section.link .links {
 }
 
 section.link a {
-  width: 100%; /* applies if not in .links group */
+  box-sizing: border-box;
+  display: block; /* if not in .links group */
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
