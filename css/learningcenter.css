@@ -118,7 +118,7 @@ section .links {
 
 section.assessment .links a {
   background-color: var(--green-perseverance);
-  color: #f9fbfc;
+  color: var(--bg-color);
   border-color: var(--yellow-joy);
 }
 
