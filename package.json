@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "&&",
+    "build": "echo 'fake build'",
     "dev": "live-server"
   },
   "devDependencies": {
