@@ -53,22 +53,38 @@ main section {
   min-height: 100%;
 }
 
-section.link .links {
+section .links {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1em;
 }
 
-section.link a {
+.links a {
+  display: block; /* not necessary, but canonical */
+  text-decoration: none;
+  background-color: #f99b1c;
+  color: currentColor;
   box-sizing: border-box;
-  display: block; /* if not in .links group */
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
   padding: 3em;
-  background-color: orange;
+  font-family: ;
   border-radius: 1em;
+  border: 0 solid currentColor;
+  transition: border-width 0.2s, padding 0.2s;
+}
+
+.links a:hover {
+  padding: 2.5em;
+  border-width: 0.5em;
+}
+
+section.assessment .links a {
+  background-color: #18783c;
+  color: #f9fbfc;
+  border-color: #f99b1c;
 }
 
 .embed-container {
