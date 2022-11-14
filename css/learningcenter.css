@@ -13,12 +13,19 @@
   font-weight: 400 800;
 }
 
+:root {
+  --blue-community: #262869;
+  --red-strength: #9b1c20;
+  --yellow-joy: #f99b1c;
+  --green-perseverance: #18783c;
+}
+
 body {
   box-sizing: border-box;
   --bg-color: #f9fbfc;
   background-color: var(--bg-color);
-  color: #262869;
-  border: 0.5rem solid #262869;
+  color: var(--blue-community);
+  border: 0.5rem solid var(--blue-community);
   font-family: 'Fern Text', 'Hoefler Text', serif;
   font-size: 20px;
   margin: 0;
@@ -91,7 +98,7 @@ section .links {
 .links a {
   display: block; /* not necessary, but canonical */
   text-decoration: none;
-  background-color: #f99b1c;
+  background-color: var(--yellow-joy);
   color: currentColor;
   box-sizing: border-box;
   flex-basis: 0;
@@ -110,9 +117,9 @@ section .links {
 }
 
 section.assessment .links a {
-  background-color: #18783c;
+  background-color: var(--green-perseverance);
   color: #f9fbfc;
-  border-color: #f99b1c;
+  border-color: var(--yellow-joy);
 }
 
 .embed-container {
