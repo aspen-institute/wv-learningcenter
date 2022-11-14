@@ -59,7 +59,10 @@ h2 {
 nav {
   padding: 1em;
   grid-area: "nav";
-  display: static;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 nav a {
@@ -67,6 +70,11 @@ nav a {
   text-decoration: none;
   color: currentColor;
   opacity: 0.8;
+}
+
+nav a.help {
+  color: var(--green-perseverance);
+  margin-top: auto;
 }
 
 nav a:hover {
