@@ -72,7 +72,13 @@ main {
 }
 
 main section {
-  min-height: 100%;
+  margin-top: 150px;
+}
+
+main > *:not(section),
+section > *:not(h2) {
+  padding-right: 1em;
+  max-width: 1200px;
 }
 
 section .links {
