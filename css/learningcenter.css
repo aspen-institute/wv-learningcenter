@@ -32,8 +32,7 @@ body {
   box-sizing: border-box;
   --bg-color: #f9fbfc;
   background-color: var(--bg-color);
-  color: var(--blue-community);
-  border: 0.5rem solid var(--blue-community);
+  color: #252525;
   font-family: 'Fern Text', 'Hoefler Text', serif;
   font-size: 20px;
   margin: 0;
@@ -47,13 +46,19 @@ body {
 
 h1, h2, h3, nav, .links a {
   font-family: 'AvenirNext-Bold', sans-serif;
+  color: var(--blue-community);
 }
 
 h1 ~ p {
   /* course intros */
   font-size: 1.2em;
-  font-variant-caps: all-small-caps;
+  color: var(--blue-community);
   font-variant-numeric: lining-nums;
+}
+
+p {
+  line-height: 1.4em;
+  font-weight: 450;
 }
 
 h2 {
@@ -116,7 +121,6 @@ section .links {
   display: block; /* not necessary, but canonical */
   text-decoration: none;
   background-color: var(--yellow-joy);
-  color: currentColor;
   box-sizing: border-box;
   flex-basis: 0;
   flex-grow: 1;
