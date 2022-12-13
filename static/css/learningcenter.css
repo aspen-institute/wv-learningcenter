@@ -36,12 +36,15 @@ body {
   font-family: 'Fern Text', 'Hoefler Text', serif;
   font-size: 20px;
   margin: 0;
-  padding: 0;
+  padding: 1em;
+  height: 100vh;
+}
+
+.course-container {
   display: grid;
   grid-column-gap: 10px;
   grid-row-gap: 1rem;
   grid-template: "nav les" auto / max-content;
-  height: 100vh;
 }
 
 h1, h2, h3, nav, .links a {
