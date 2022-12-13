@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "echo 'fake build'",
-    "dev": "live-server"
+    "dev": "live-server ./static"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
