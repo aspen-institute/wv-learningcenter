@@ -40,6 +40,10 @@ body {
   height: 100vh;
 }
 
+blockquote {
+  font-style: italic;
+}
+
 .course-container {
   display: grid;
   grid-column-gap: 10px;
