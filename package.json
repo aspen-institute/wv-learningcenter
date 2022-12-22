@@ -1,9 +1,12 @@
 {
   "scripts": {
-    "build": "echo 'fake build'",
-    "dev": "live-server ./static"
+    "build": "sass styles:static/css",
+    "dev": "sass --watch styles:static/css & live-server ./static"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
   }
 }
