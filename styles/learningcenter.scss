@@ -177,50 +177,43 @@ nav.grid {
   grid-auto-rows: max-content;
   grid-auto-flow: column;
   gap: 1rem;
-}
 
-nav.grid > a {
-  color: white;
-  display: block;
-  width: auto;
-  aspect-ratio: 1 / 1;
-  padding: 1rem;
-}
+  // themes/subjects
+  .storytelling {
+    grid-column: 1;
+    color: var(--blue-community);
+  }
 
-nav.grid .storytelling {
-  color: var(--blue-community);
-  grid-column: 1;
-}
+  .gatherings {
+    grid-column: 2;
+    color: var(--red-strength);
+  }
 
-nav.grid .gatherings {
-  color: var(--red-strength);
-  grid-column: 2;
-}
+  .action {
+    grid-column: 3;
+    color: var(--yellow-joy);
+  }
 
-nav.grid .action {
-  color: var(--yellow-joy);
-  grid-column: 3;
-}
+  > a.course {
+    // courses
+    color: white;
+    display: block;
+    aspect-ratio: 1 /1;
+    overflow-y: scroll;
+    padding: 1rem;
+    color: white;
+    background-color: var(--green-perseverance);
 
-a.course {
-  color: white;
-  background-color: var(--green-perseverance);
-}
+    &.storytelling {
+      background-color: var(--blue-community);
+    }
 
-a.course.storytelling {
-  background-color: var(--blue-community);
-}
+    &.gatherings {
+      background-color: var(--red-strength);
+    }
 
-a.course.gatherings {
-  background-color: var(--red-strength);
-}
-
-a.course.action {
-  background-color: var(--yellow-joy);
-}
-
-@media (max-width: 500px) {
-  nav.grid {
-    grid-template-columns: 1fr;
+    &.action {
+      background-color: var(--yellow-joy);
+    }
   }
 }
