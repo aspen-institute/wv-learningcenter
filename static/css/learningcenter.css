@@ -68,7 +68,7 @@ p {
   font-weight: 450;
 }
 
-h2 {
+.course-container h2 {
   z-index: 1;
   position: sticky;
   top: 0;
@@ -166,16 +166,53 @@ section.assessment .links a {
   height: 100%;
 }
 
+/* COURSE SELECTION */
+
 nav.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
+  grid-auto-flow: column;
+  gap: 1rem;
 }
 
 nav.grid > a {
+  color: white;
   display: block;
   width: auto;
   aspect-ratio: 1 / 1;
+  padding: 1rem;
+}
+
+nav.grid .storytelling {
+  color: var(--blue-community);
+  grid-column: 1;
+}
+
+nav.grid .gatherings {
+  color: var(--red-strength);
+  grid-column: 2;
+}
+
+nav.grid .action {
+  color: var(--yellow-joy);
+  grid-column: 3;
+}
+
+a.course {
+  color: white;
+  background-color: var(--green-perseverance);
+}
+
+a.course.storytelling {
+  background-color: var(--blue-community);
+}
+
+a.course.gatherings {
+  background-color: var(--red-strength);
+}
+
+a.course.action {
+  background-color: var(--yellow-joy);
 }
 
 @media (max-width: 500px) {
