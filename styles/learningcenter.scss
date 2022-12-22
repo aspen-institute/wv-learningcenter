@@ -49,11 +49,15 @@ blockquote {
   grid-column-gap: 10px;
   grid-row-gap: 1rem;
   grid-template: "nav les" auto / max-content;
+
+  h1, h2, h3, nav, .links a {
+    color: var(--blue-community);
+  }
 }
 
-h1, h2, h3, nav, .links a {
+h1, h2, h3, .links a {
   font-family: 'AvenirNext-Bold', sans-serif;
-  color: var(--blue-community);
+  margin: 0;
 }
 
 h1 ~ p {
