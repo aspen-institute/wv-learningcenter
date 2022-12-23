@@ -1,12 +1,11 @@
 {
   "scripts": {
-    "build": "sass styles:static/css",
-    "dev": "sass --watch styles:static/css & live-server ./static"
-  },
-  "devDependencies": {
-    "live-server": "^1.2.2"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
-    "sass": "^1.57.1"
+    "astro": "^1.7.2"
   }
 }
