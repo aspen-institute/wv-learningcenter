@@ -53,6 +53,23 @@ blockquote {
   h1, h2, h3, nav, .links a {
     color: var(--blue-community);
   }
+
+  nav {
+    padding: 1em;
+    grid-area: "nav";
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  h2 {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    border-bottom: 0.5rem solid currentColor;
+  }
 }
 
 h1, h2, h3, .links a {
@@ -70,23 +87,6 @@ h1 ~ p {
 p {
   line-height: 1.4em;
   font-weight: 450;
-}
-
-.course-container h2 {
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  background-color: var(--bg-color);
-  border-bottom: 0.5rem solid currentColor;
-}
-
-nav {
-  padding: 1em;
-  grid-area: "nav";
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  height: 100%;
 }
 
 nav a {
@@ -157,16 +157,16 @@ section.assessment .links a {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-}
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* COURSE SELECTION */
