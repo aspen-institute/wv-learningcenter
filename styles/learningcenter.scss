@@ -198,11 +198,11 @@ nav.grid {
     color: var(--yellow-joy);
   }
 
-  > a.course {
+  a.course {
     // courses
     color: white;
     display: block;
-    aspect-ratio: 1 /1;
+    aspect-ratio: 1 / 1;
     overflow-y: scroll;
     padding: 1rem;
     color: white;
@@ -218,6 +218,20 @@ nav.grid {
 
     &.action {
       background-color: var(--yellow-joy);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+
+    .storytelling,
+    .gatherings,
+    .action {
+      grid-column: 1;
+    }
+
+    a.course {
+      aspect-ratio: unset;
     }
   }
 }
