@@ -89,7 +89,7 @@ What should they send in as part of showing what they learned?
 
 ## Lesson 3: What to do When Things Get Hard
 
-Humans are complex- and so it’s inevitable that, while we are building relationships with one another, there will be moments that get hard, or where harm is done. This module will explore how to navigate that- what can you do in a conversation where someone says something harmful? How do we address that harm while still creating a sense of belonging for everyone in the room?
+Humans are complex, and so it’s inevitable that, while we are building relationships with one another, there will be moments that get hard, or where harm is done. This module will explore how to navigate that- what can you do in a conversation where someone says something harmful? How do we address that harm while still creating a sense of belonging for everyone in the room?
 
 ### Video
 
