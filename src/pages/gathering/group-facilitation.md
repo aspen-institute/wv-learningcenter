@@ -1,0 +1,114 @@
+---
+title: Facilitating Groups
+intro: In this module, you will learn the transformation practice of gathering people in your community in conversation. We believe that relationships are the foundation to weaving and to building sustainable change for our neighborhoods. Having a conversation and sharing our personal stories across lines of identity and ideological difference can help us see ourselves more clearly and can help us build a more full understanding of the story of our communities. To help you lead these conversations, you will learn How to Prepare for the Conversation, Basic Facilitation Skills, and What to do When Things Get Hard. Our partner, The People’s Supper, will take you step-by-step through this process, with videos, activities, and downloadable guides to help you, whether you’re bridging divides, building community, or strengthening relationships in your neighborhood.
+duration: XX minutes
+---
+## Lesson 1: How to Prepare for the Conversation
+
+Deciding to have a conversation across ideological or identity difference requires work long before the conversation happens. These conversations can be difficult, and so you want to go in with a clear sense of whether you are ready to have the conversation, what your triggers are, what your reactions can be, and how to engage with care. This module will look at how to examine those patterns and impulses in you in order to prepare well for the conversation you hope to have.
+
+### Video
+
+<!-- TODO: auto-detect .embed-container ? -->
+<iframe src="https://drive.google.com/file/d/1rHT_HTNqlP5Wl3tWE_t9_KCz8ambyLou/preview"></iframe>
+
+### Activity 1
+
+As you Weave, Having a sense of your own patterns and impulses that show up for you in the conversations you have is necessary in the work of trust building and harm reduction. It’s also helpful to model for your conversation partners that this work is just as much about self examination as it as about hearing other’s stories:
+
+- Think about the topic you’re hoping to connect around: perhaps it’s race, politics, religion, or something more specific. Grab a journal, pick a week, and keep that journal with you for the whole week: writing down every time you hear something about the topic you’ve chosen. Write not only what you heard, but how you reacted: what happened in your body? What thoughts or memories did this surface for you? 
+
+- Take a day to consider other times you’ve tried to have a conversation about the topic you’ve chosen. How did it go? What made the conversation difficult? What helped you have a meaningful conversation about the topic, or what got in the way?
+
+- At the end of your week, take some time to look back over your journal and notice patterns. What reactions are typical for you around this type of conversation, and what sets those reactions off? What does your experience trying to have this kind of conversation before tell you about how to set the conversation up next time? 
+
+Having a sense of these patterns helps you to better show up in a conversation.
+
+### Activity 2
+
+Weaving is a long game. It is not a fair or realistic expectation that you can show up to a conversation like this in every single moment. With that in mind, it helps to have a tool to check in with yourself about your capacity to have the type of conversation you’re hoping to have.  This is also a beautiful way to model and invite care within the community you’re weaving with.
+
+- **I am physically ready to show up to this conversation**
+  Check in with your body. Are you feeling settled and well enough to be present with yourself and others? Is your heart rate or breath racing with anxiety? Did you remember to eat, hydrate and sleep enough to be grounded and present?
+
+- **I am intellectually ready to show up to this conversation**
+  Check in with your mind. Are you able to listen and engage with what people share? Is your mind preoccupied with the news or to-dos? Has a traumatic experience or difficult memory come up that has made following a train of thought difficult? Stress, grief, trauma and other factors impact how we focus, process and remember, and there’s no shame in giving your brain a break if it’s hitting a limit for now.
+
+- **I am emotionally ready to show up to this conversation**
+  Check in with your feelings. Are you grounded enough to empathetically connect with others and allow their emotional experiences to co-exist with your own? Does a feeling (like jealousy, sadness, or rage) seem likely to overpower you from sitting with other people with other feelings? Are you having a hard time being aware of your own emotions, or which way they might go? We all have moments where responding to our own feelings needs to be the singular priority, and it’s okay to step back when that’s the case.
+
+If you start to feel overwhelmed, don’t be afraid to reach out to your conversation partner and say, "Hey, I am not in a place to show up to this conversation as I’d like to today, so I’m wondering if we can reschedule?” 
+
+## Lesson 2: Basic Facilitation Skills
+
+As you’re weaving, it will be helpful to have some basic facilitation skills to host the important, but sometimes difficult, conversations about what your community most needs. This module will help you consider the goal for your conversation, who to invite, how to invite them, how to set ground rules, and how to pick questions to ask that allow the conversation to be a place where real trust is built. 
+
+### Video
+
+<iframe src="https://drive.google.com/file/d/1xZjDoRY9QI9R9mWgzpqDI5_hjZzFy3DG/preview"></iframe>
+
+### Activity
+
+<div class="links">
+  <!-- TODO: update to PDF once I get access -->
+  <a href="https://docs.google.com/document/d/1pGqCQ4r2c7JjyvC9PAV9uHgwWh85BlLUCdw_X0O2Y2A/edit?usp=sharing">Download & print worksheet first</a>
+</div>
+
+Read the following invitation language, and then answer the questions below:
+
+  Hi Dr. Jones
+
+  I hope this email finds you well! I have been so disheartened by the feeling that political polarization is growing in our community, and I want to have a conversation with neighbors across political lines as a counternarrative to that. I think it is important for us to be intentional about spaces to practice this kind of dialogue. I’d love for you to join us! 
+ 
+  I’m going to have a group of about 10 people over to my house next Friday night at 7:00 for a meal. I’m inviting a group of trusted friends who I know have the ability to engage with thoughtfulness and care. This will be a chance for us to break bread with new people and share stories about the people and moments that make us who we are. We will walk through a short series of questions designed to crack the conversation open. 
+   
+  As I was imagining this dinner, you came to mind. I have so appreciated your class and the insight and perspective you bring- and think your attentiveness to history and culture would be so valuable in the conversation.
+   
+  You can RSVP directly by emailing me back. Please let me know by next Tuesday if you plan to attend! If you don’t have the capacity to show up for a conversation like this right now, I completely understand. If all goes well, I hope to host more of these- and will keep you in the loop! 
+   
+  Looking forward to talking with you soon!
+   
+  Warmly,
+   
+  K Scarry
+
+After you've read the above, consider:
+
+- What is the goal for the gathering itself?
+- Why was this particular person being invited?
+- What did you notice about this invitation? What feels doable to you?
+
+### Reflection
+
+What should they send in as part of showing what they learned?
+
+<div class="assessment links">
+  <a href="#TODO">TODO: Google Form</a>
+</div>
+
+## Lesson 3: What to do When Things Get Hard
+
+Humans are complex- and so it’s inevitable that, while we are building relationships with one another, there will be moments that get hard, or where harm is done. This module will explore how to navigate that- what can you do in a conversation where someone says something harmful? How do we address that harm while still creating a sense of belonging for everyone in the room?
+
+### Video
+
+<iframe src="https://drive.google.com/file/d/1_AAg_0MJXZPEmmMc6rdQ9oWNc0WEex5L/preview"></iframe>
+
+### Activity
+
+- Think back to a time that a conversation you were part of went awry. What happened? _(write out the story)_
+- Now, considering the following steps, write out how you might have interrupted the conversation you mentioned above: 
+  - Name what came up for you.
+  - Name why it was harmful.
+  - Offer a shift as a way forward.
+  - Reflect: What feels doable about these steps? What feels complicated.
+- Extra challenge: Relationships are a long game, so just because you might not have addressed something in a moment doesn’t mean you can’t address it at all. As an added challenge, try returning to the people who were part of the conversation you just wrote about, and let them know that it’s lingering with you, and you want to share that with them.
+
+## Course Reflection
+
+Congratulations on completing the Weave module on Gathering! We’d love to hear about your experience with this material and how you will use it in your community. After completing this short reflection, we’ll send you a certificate of completion. You are also invited to discuss gatherings and learn with and from other weavers by visiting our peer learning space [TODO: embed link].
+
+- What did it feel like to examine your own sense of readiness? Do you feel able to step back when you don’t have capacity? 
+- What topic did you choose to pay attention to your reactions around? 
+- What is a tool or language you’ve acquired through this module that you can lean on in the future around interrupting patterns that shut conversation down or around stepping back when you don’t have the capacity to engage? 
+- How will you use these tools in your own community?

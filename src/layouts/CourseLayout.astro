@@ -1,0 +1,16 @@
+---
+import BaseHead from "../components/BaseHead.astro"
+
+const { frontmatter : FM } = Astro.props
+---
+<html>
+  <BaseHead title={FM.title} />
+  <body>
+    <h1>{FM.title}</h1>
+    <p class="course-introduction">{FM.intro}</p>
+    <p class="course-instructions">You can pause and pick up where you left off at any point, until the assessment. Once you complete the assessment, a Weave Leader will be alerted and reach out to you with your results.</p>
+    <p class="course-partner">{FM.partner}</p>
+    <!-- 2. Rendered HTML will be passed into the default slot. -->
+    <slot />
+  </body>
+</html>
