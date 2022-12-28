@@ -34,7 +34,7 @@ body {
   background-color: var(--bg-color);
   color: #252525;
   font-family: 'Fern Text', 'Hoefler Text', serif;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   padding: 1em;
   height: 100vh;
@@ -53,6 +53,23 @@ blockquote {
   h1, h2, h3, nav, .links a {
     color: var(--blue-community);
   }
+
+  nav {
+    padding: 1em;
+    grid-area: "nav";
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  h2 {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    border-bottom: 0.5rem solid currentColor;
+  }
 }
 
 h1, h2, h3, .links a {
@@ -61,7 +78,8 @@ h1, h2, h3, .links a {
 }
 
 h1 ~ p {
-  /* course intros */
+  // course intros
+  // TODO: should be class
   font-size: 1.2em;
   color: var(--blue-community);
   font-variant-numeric: lining-nums;
@@ -70,23 +88,6 @@ h1 ~ p {
 p {
   line-height: 1.4em;
   font-weight: 450;
-}
-
-.course-container h2 {
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  background-color: var(--bg-color);
-  border-bottom: 0.5rem solid currentColor;
-}
-
-nav {
-  padding: 1em;
-  grid-area: "nav";
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  height: 100%;
 }
 
 nav a {
@@ -157,16 +158,16 @@ section.assessment .links a {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-}
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* COURSE SELECTION */
@@ -177,6 +178,9 @@ nav.grid {
   grid-auto-rows: max-content;
   grid-auto-flow: column;
   gap: 1rem;
+
+  max-width: 1300px;
+  margin: auto;
 
   // themes/subjects
   .storytelling {
@@ -194,11 +198,11 @@ nav.grid {
     color: var(--yellow-joy);
   }
 
-  > a.course {
+  a.course {
     // courses
     color: white;
     display: block;
-    aspect-ratio: 1 /1;
+    aspect-ratio: 1 / 1;
     overflow-y: scroll;
     padding: 1rem;
     color: white;
@@ -214,6 +218,20 @@ nav.grid {
 
     &.action {
       background-color: var(--yellow-joy);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+
+    .storytelling,
+    .gatherings,
+    .action {
+      grid-column: 1;
+    }
+
+    a.course {
+      aspect-ratio: unset;
     }
   }
 }
