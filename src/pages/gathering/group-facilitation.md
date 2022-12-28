@@ -57,21 +57,21 @@ As you’re weaving, it will be helpful to have some basic facilitation skills t
 
 Read the following invitation language, and then answer the questions below:
 
-  Hi Dr. Jones
-
-  I hope this email finds you well! I have been so disheartened by the feeling that political polarization is growing in our community, and I want to have a conversation with neighbors across political lines as a counternarrative to that. I think it is important for us to be intentional about spaces to practice this kind of dialogue. I’d love for you to join us! 
- 
-  I’m going to have a group of about 10 people over to my house next Friday night at 7:00 for a meal. I’m inviting a group of trusted friends who I know have the ability to engage with thoughtfulness and care. This will be a chance for us to break bread with new people and share stories about the people and moments that make us who we are. We will walk through a short series of questions designed to crack the conversation open. 
-   
-  As I was imagining this dinner, you came to mind. I have so appreciated your class and the insight and perspective you bring- and think your attentiveness to history and culture would be so valuable in the conversation.
-   
-  You can RSVP directly by emailing me back. Please let me know by next Tuesday if you plan to attend! If you don’t have the capacity to show up for a conversation like this right now, I completely understand. If all goes well, I hope to host more of these- and will keep you in the loop! 
-   
-  Looking forward to talking with you soon!
-   
-  Warmly,
-   
-  K Scarry
+> Hi Dr. Jones
+>
+> I hope this email finds you well! I have been so disheartened by the feeling that political polarization is growing in our community, and I want to have a conversation with neighbors across political lines as a counternarrative to that. I think it is important for us to be intentional about spaces to practice this kind of dialogue. I’d love for you to join us! 
+>
+> I’m going to have a group of about 10 people over to my house next Friday night at 7:00 for a meal. I’m inviting a group of trusted friends who I know have the ability to engage with thoughtfulness and care. This will be a chance for us to break bread with new people and share stories about the people and moments that make us who we are. We will walk through a short series of questions designed to crack the conversation open. 
+>  
+> As I was imagining this dinner, you came to mind. I have so appreciated your class and the insight and perspective you bring- and think your attentiveness to history and culture would be so valuable in the conversation.
+>  
+> You can RSVP directly by emailing me back. Please let me know by next Tuesday if you plan to attend! If you don’t have the capacity to show up for a conversation like this right now, I completely understand. If all goes well, I hope to host more of these- and will keep you in the loop! 
+>
+> Looking forward to talking with you soon!
+>
+> Warmly,
+>
+> K Scarry
 
 After you've read the above, consider:
 
