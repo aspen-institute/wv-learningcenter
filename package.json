@@ -6,6 +6,8 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^1.7.2"
+    "astro": "^1.7.2",
+    "rehype-slug": "^5.1.0",
+    "rehype-toc": "^3.0.2"
   }
 }

@@ -58,39 +58,49 @@ blockquote {
   }
 }
 
-.course-layout {
-  display: grid;
-  grid-column-gap: 10px;
-  grid-row-gap: 1rem;
-  grid-template: "nav les" auto / max-content;
+.course-content {
+  // display: grid;
+  // grid-column-gap: 10px;
+  // grid-row-gap: 1rem;
+  // grid-template: "nav les" auto / max-content;
 
-  h1, h2, h3, nav, .links a {
-    color: var(--blue-community);
-  }
-
-  .course-content {
-    h2 {
-      z-index: 1;
-      position: sticky;
-      top: 0;
-      background-color: var(--bg-color);
-      border-bottom: 0.5rem solid currentColor;
-    }
-  }
+  max-width: 1000px;
+  position: relative;
+  margin-left: 400px;
 
   .course-toc {
-    // nav
+    font-family: 'AvenirNext-Bold', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100vh;
     padding: 1em;
-    grid-area: "nav";
+    grid-area: nav;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 100%;
+
+    ol, ul {
+      list-style: none;
+    }
 
     .help {
       color: var(--green-perseverance);
       margin-top: auto;
     }
+  }
+
+  h1, h2, h3, nav, .links a {
+    color: var(--blue-community);
+  }
+
+  h2 {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    border-bottom: 0.5rem solid currentColor;
   }
 }
 

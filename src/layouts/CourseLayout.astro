@@ -12,14 +12,8 @@ const { frontmatter : FM } = Astro.props
       <p class="course-instructions">You can pause and pick up where you left off at any point, until the assessment. Once you complete the assessment, a Weave Leader will be alerted and reach out to you with your results.</p>
       {FM.partnerName ? <p class="course-partner">This course is produced in collaboration with <a class="partner-name" href={FM.partnerUrl}>{FM.partnerName}</a>.</p> : null}
     </header>
-    <!-- 2. Rendered HTML will be passed into the default slot. -->
-    <main class="course-layout">
-      <nav class="course-toc">
-        test
-      </nav>
-      <article class="course-content">
-        <slot />
-      </article>
+    <main class="course-content">
+      <slot />
     </main>
   </body>
 </html>
