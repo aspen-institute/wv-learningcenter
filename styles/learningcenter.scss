@@ -175,10 +175,16 @@ section.assessment .links a {
   border-color: var(--yellow-joy);
 }
 
-.embed-container {
+.embed-container, iframe {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+
+  // TODO: override renderer instead
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: none;
 
   iframe,
   object,
