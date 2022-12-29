@@ -61,6 +61,11 @@ blockquote {
     flex-direction: column;
     box-sizing: border-box;
     height: 100%;
+
+    .help {
+      color: var(--green-perseverance);
+      margin-top: auto;
+    }
   }
 
   h2 {
@@ -88,20 +93,17 @@ p {
   font-weight: 450;
 }
 
-nav a {
-  display: block;
-  text-decoration: none;
-  color: currentColor;
-  opacity: 0.8;
-}
+nav {
+  a {
+    display: block;
+    text-decoration: none;
+    color: currentColor;
+    opacity: 0.8;
 
-nav a.help {
-  color: var(--green-perseverance);
-  margin-top: auto;
-}
-
-nav a:hover {
-  opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 main {
