@@ -6,6 +6,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@astrojs/mdx": "^0.14.0",
     "astro": "^1.7.2",
     "rehype-slug": "^5.1.0",
     "rehype-toc": "^3.0.2"
