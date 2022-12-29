@@ -77,9 +77,7 @@ h1, h2, h3, .links a {
   margin: 0;
 }
 
-h1 ~ p {
-  // course intros
-  // TODO: should be class
+p.course-introduction {
   font-size: 1.2em;
   color: var(--blue-community);
   font-variant-numeric: lining-nums;
