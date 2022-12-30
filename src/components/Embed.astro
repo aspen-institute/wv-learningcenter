@@ -1,0 +1,16 @@
+---
+export interface Props {
+  src: URL
+}
+
+const props = Astro.props;
+
+// remove default iframe copypasta
+delete props.width
+delete props.height
+delete props.frameborder
+delete props.allowfullscreen // always included
+---
+<div class="embed-container">
+  <iframe allow="fullscreen autoplay" {...props}></iframe>
+</div>
