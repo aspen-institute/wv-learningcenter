@@ -1,21 +1,21 @@
 @font-face {
-  src: url("./fonts/avenirnext-bold.eot");
-  src: url("./fonts/avenirnext-bold.woff2") format("woff2"),
-       url("./fonts/avenirnext-bold.woff") format("woff");
+  src: url("/fonts/avenirnext-bold.eot");
+  src: url("/fonts/avenirnext-bold.woff2") format("woff2"),
+       url("/fonts/avenirnext-bold.woff") format("woff");
   font-family: "AvenirNext-Bold";
 }
 
 @font-face {
-  src: url('./fonts/FernVariable-Roman-VF.woff2') format("woff2"),
-       url('./fonts/FernVariable-Roman-VF.woff') format("woff");
+  src: url('/fonts/FernVariable-Roman-VF.woff2') format("woff2"),
+       url('/fonts/FernVariable-Roman-VF.woff') format("woff");
   font-family: 'Fern Text';
   font-style: normal;
   font-weight: 400 800;
 }
 
 @font-face {
-  src: url('./fonts/FernVariable-Italic-VF.woff2') format("woff2"),
-       url('./fonts/FernVariable-Italic-VF.woff') format("woff");
+  src: url('/fonts/FernVariable-Italic-VF.woff2') format("woff2"),
+       url('/fonts/FernVariable-Italic-VF.woff') format("woff");
   font-family: 'Fern Text';
   font-style: italic;
   font-weight: 400 800;
@@ -37,30 +37,62 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 1em;
-  height: 100vh;
+}
+
+p, blockquote, ul, ol, dl, table, pre, iframe, .embed-container, li {
+  margin: 1em 0;
 }
 
 blockquote {
+  padding-left: 2em;
   font-style: italic;
 }
 
-.course-container {
-  display: grid;
-  grid-column-gap: 10px;
-  grid-row-gap: 1rem;
-  grid-template: "nav les" auto / max-content;
+.course-introduction {
+  font-size: 1.2em;
+  color: var(--blue-community);
+  font-variant-numeric: lining-nums;
 
-  h1, h2, h3, nav, .links a {
-    color: var(--blue-community);
+  .partner-name {
+    font-weight: 600;
   }
+}
 
-  nav {
+.course-content {
+  // display: grid;
+  // grid-column-gap: 10px;
+  // grid-row-gap: 1rem;
+  // grid-template: "nav les" auto / max-content;
+
+  max-width: 1000px;
+  position: relative;
+  margin-left: 400px;
+
+  .course-toc {
+    font-family: 'AvenirNext-Bold', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100vh;
     padding: 1em;
-    grid-area: "nav";
+    grid-area: nav;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 100%;
+
+    ol, ul {
+      list-style: none;
+    }
+
+    .help {
+      color: var(--green-perseverance);
+      margin-top: auto;
+    }
+  }
+
+  h1, h2, h3, nav, .links a {
+    color: var(--blue-community);
   }
 
   h2 {
@@ -77,33 +109,22 @@ h1, h2, h3, .links a {
   margin: 0;
 }
 
-h1 ~ p {
-  // course intros
-  // TODO: should be class
-  font-size: 1.2em;
-  color: var(--blue-community);
-  font-variant-numeric: lining-nums;
-}
-
 p {
   line-height: 1.4em;
   font-weight: 450;
 }
 
-nav a {
-  display: block;
-  text-decoration: none;
-  color: currentColor;
-  opacity: 0.8;
-}
+nav {
+  a {
+    display: block;
+    text-decoration: none;
+    color: currentColor;
+    opacity: 0.8;
 
-nav a.help {
-  color: var(--green-perseverance);
-  margin-top: auto;
-}
-
-nav a:hover {
-  opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 main {
@@ -154,10 +175,16 @@ section.assessment .links a {
   border-color: var(--yellow-joy);
 }
 
-.embed-container {
+.embed-container, iframe {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+
+  // TODO: override renderer instead
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: none;
 
   iframe,
   object,
