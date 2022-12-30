@@ -215,7 +215,7 @@ nav.grid {
     color: var(--blue-community);
   }
 
-  .gatherings {
+  .gathering {
     grid-column: 2;
     color: var(--red-strength);
   }
@@ -239,7 +239,7 @@ nav.grid {
       background-color: var(--blue-community);
     }
 
-    &.gatherings {
+    &.gathering {
       background-color: var(--red-strength);
     }
 
@@ -252,7 +252,7 @@ nav.grid {
     grid-template-columns: 1fr;
 
     .storytelling,
-    .gatherings,
+    .gathering,
     .action {
       grid-column: 1;
     }
