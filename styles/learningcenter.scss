@@ -175,28 +175,6 @@ section.assessment .links a {
   border-color: var(--yellow-joy);
 }
 
-.embed-container, iframe {
-  position: relative;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-
-  // TODO: override renderer instead
-  top: 0;
-  left: 0;
-  width: 100%;
-  border: none;
-
-  iframe,
-  object,
-  embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 /* COURSE SELECTION */
 
 nav.grid {
@@ -215,7 +193,7 @@ nav.grid {
     color: var(--blue-community);
   }
 
-  .gatherings {
+  .gathering {
     grid-column: 2;
     color: var(--red-strength);
   }
@@ -239,7 +217,7 @@ nav.grid {
       background-color: var(--blue-community);
     }
 
-    &.gatherings {
+    &.gathering {
       background-color: var(--red-strength);
     }
 
@@ -252,7 +230,7 @@ nav.grid {
     grid-template-columns: 1fr;
 
     .storytelling,
-    .gatherings,
+    .gathering,
     .action {
       grid-column: 1;
     }

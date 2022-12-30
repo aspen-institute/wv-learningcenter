@@ -1,6 +1,17 @@
 ---
+interface Link {
+  href: URL,
+  text: String
+}
+
+export interface Props {
+  items: Array<Link>;
+}
+
 const { items } = Astro.props;
 ---
 <div class="links">
-  {items.map(link => <a href={link.href}>{link.text}</a>)}
+  {items.map(link =>
+    <a target="_blank" href={link.href}>{link.text}</a>
+  )}
 </div>
