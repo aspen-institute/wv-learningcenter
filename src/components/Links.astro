@@ -1,0 +1,6 @@
+---
+const { items } = Astro.props;
+---
+<div class="links">
+  {items.map(link => <a href={link.href}>{link.text}</a>)}
+</div>
