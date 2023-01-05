@@ -26,6 +26,7 @@
   --red-strength: #9b1c20;
   --yellow-joy: #f99b1c;
   --green-perseverance: #18783c;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -80,6 +81,7 @@ blockquote {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    overflow-y: scroll;
 
     ol, ul {
       list-style: none;
@@ -133,17 +135,10 @@ nav {
 main {
   grid-area: "les";
   overflow-y: auto;
-  scroll-behavior: smooth;
 }
 
 main section {
   margin-top: 150px;
-}
-
-main > *:not(section),
-section > *:not(h2) {
-  padding-right: 1em;
-  max-width: 1200px;
 }
 
 section .links {
