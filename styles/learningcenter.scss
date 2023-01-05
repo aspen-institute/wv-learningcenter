@@ -26,6 +26,7 @@
   --red-strength: #9b1c20;
   --yellow-joy: #f99b1c;
   --green-perseverance: #18783c;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -134,7 +135,6 @@ nav {
 main {
   grid-area: "les";
   overflow-y: auto;
-  scroll-behavior: smooth;
 }
 
 main section {
