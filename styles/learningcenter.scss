@@ -106,7 +106,6 @@ blockquote {
 
 h1, h2, h3, .links a {
   font-family: 'AvenirNext-Bold', sans-serif;
-  margin: 0;
 }
 
 p {
@@ -124,6 +123,10 @@ nav {
     &:hover {
       opacity: 1;
     }
+  }
+
+  h1, h2, h3 {
+    margin: 0;
   }
 }
 
