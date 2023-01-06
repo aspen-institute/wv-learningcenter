@@ -1,7 +1,8 @@
 ---
 interface Link {
   href: URL,
-  text: String
+  text: String,
+  assessment: Boolean
 }
 
 export interface Props {
@@ -12,6 +13,6 @@ const { items } = Astro.props;
 ---
 <div class="links">
   {items.map(link =>
-    <a target="_blank" href={link.href}>{link.text}</a>
+    <a className={link.assessment ? 'assessment' : null} target="_blank" href={link.href}>{link.text}</a>
   )}
 </div>

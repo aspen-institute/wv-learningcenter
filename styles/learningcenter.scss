@@ -141,20 +141,30 @@ main section {
   margin-top: 150px;
 }
 
-section .links {
+.links {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1em;
+
+  align-items: stretch;
 }
 
 .links a {
-  display: block; /* not necessary, but canonical */
+  // min width
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  // vertical align text, same height by row
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   text-decoration: none;
   background-color: var(--yellow-joy);
   box-sizing: border-box;
-  flex-basis: 0;
-  flex-grow: 1;
+
   text-align: center;
   padding: 3em;
   border-radius: 1em;
@@ -167,7 +177,8 @@ section .links {
   border-width: 0.5em;
 }
 
-section.assessment .links a {
+.links.assessment a,
+.links a.assessment {
   background-color: var(--green-perseverance);
   color: var(--bg-color);
   border-color: var(--yellow-joy);
