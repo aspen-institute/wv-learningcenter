@@ -13,6 +13,6 @@ const { items } = Astro.props;
 ---
 <div class="links">
   {items.map(link =>
-    <a className={link.assessment ? 'assessment' : null} target="_blank" href={link.href}>{link.text}</a>
+    <a class={link.assessment ? 'assessment' : null} target="_blank" href={link.href}>{link.text}</a>
   )}
 </div>
