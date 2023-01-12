@@ -8,8 +8,8 @@ import NavHeader from "../components/NavHeader.astro";
 <BaseHead/>
 <body>
   <a href="/"><img class="logo" src="/wv-learningcenter-logo.svg" alt="Weave Learning Center"></a>
-  <NavHeader hideLogo/>
   <p>Welcome. Each module below contains muliple Lessons, designed to be accessed in sequential order.</p>
+  <NavHeader hideLogo class="center"/>
   <nav class="menu grid">
     <header class="storytelling">
       <h2 class="theme">Storytelling</h2>
@@ -60,5 +60,9 @@ import NavHeader from "../components/NavHeader.astro";
   body {
     max-width: 1300px;
     margin: auto;
+  }
+
+  nav.center {
+    justify-content: center;
   }
 </style>

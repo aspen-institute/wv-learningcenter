@@ -4,9 +4,9 @@ export interface Props {
   hideLogo?: Boolean;
 }
 
-const { hideLogo = false } = Astro.props;
+const { hideLogo = false, class: className } = Astro.props;
 ---
-<nav class="header">
+<nav class={className}>
   {!hideLogo
     ? <a href="/"><img class="logo" src="/wv-learningcenter-logo.svg" alt="Weave Learning Center"></a>
     : null
