@@ -13,6 +13,7 @@ const { frontmatter : FM } = Astro.props
         <h1>{FM.title}</h1>
         <p class="course-description">{FM.intro}</p>
         <p class="course-instructions">You can pause and pick up where you left off at any point, until the assessment. Once you complete the assessment, a Weave Leader will be alerted and reach out to you with your results.</p>
+        <p>We also invite you to discuss your learning and thoughts on how this content applies to weaving in our [online community](https://community.weavers.org). You must be a member of the community to receive the certificate and post in the community. Please [join today](https://community.weavers.org/pages/welcome).
         <p class="course-credits">This course is {FM.partnerName ? <>a collaboration with <strong><a class="partner-name" href={FM.partnerUrl}>{FM.partnerName}</a></strong>. It is </> : null} part of the <a href="/">Weave Learning Center</a>.</p>
       </header>
       <slot />
