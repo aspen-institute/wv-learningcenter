@@ -1,13 +1,16 @@
 ---
 import '../../styles/learningcenter.scss';
 export interface Props {
-  title?: string;
+  hideLogo?: Boolean;
 }
 
-const { title } = Astro.props;
+const { hideLogo = false } = Astro.props;
 ---
 <nav class="header">
-  <a href="/"><img class="logo" src="/wv-learningcenter-logo.svg" alt="Weave Learning Center"></a>
+  {!hideLogo
+    ? <a href="/"><img class="logo" src="/wv-learningcenter-logo.svg" alt="Weave Learning Center"></a>
+    : null
+  }
   <a href="https://community.weavers.org/">Join our Community</a>
   <a href="https://weavers.org">About Weave</a>
 </nav>

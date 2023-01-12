@@ -5,6 +5,8 @@
   font-family: "AvenirNext-Bold";
 }
 
+// TODO: import Avenir better
+
 @font-face {
   src: url('/fonts/FernVariable-Roman-VF.woff2') format("woff2"),
        url('/fonts/FernVariable-Roman-VF.woff') format("woff");
@@ -192,9 +194,6 @@ nav.grid {
   grid-auto-rows: max-content;
   grid-auto-flow: column;
   gap: 1rem;
-
-  max-width: 1300px;
-  margin: auto;
 
   // themes/subjects
   .storytelling {
