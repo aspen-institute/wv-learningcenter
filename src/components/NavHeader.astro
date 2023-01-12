@@ -1,0 +1,32 @@
+---
+import '../../styles/learningcenter.scss';
+export interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+<nav class="header">
+  <a href="/"><img class="logo" src="/wv-learningcenter-logo.svg" alt="Weave Learning Center"></a>
+  <a href="https://community.weavers.org/">Join our Community</a>
+  <a href="https://weavers.org">About Weave</a>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    align-content: baseline;
+    gap: 1em;
+    font-family: sans-serif; /* TODO: better Avenir */
+  }
+
+  nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 2em;
+  }
+</style>
