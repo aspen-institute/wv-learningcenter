@@ -1,13 +1,14 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import NavHeader from "../components/NavHeader.astro";
 ---
 
 <!DOCTYPE html>
 <html>
 <BaseHead/>
 <body>
-  <h1>Weave Learning Center</h1>
-  <p>Welcome. Each module below contains muliple Lessons, designed to be accessed in sequential order.</p>
+  <a href="/"><img class="logo" src="/wv-learningcenter-logo.svg" alt="Weave Learning Center"></a>
+  <NavHeader hideLogo class="center"/>
   <nav class="menu grid">
     <header class="storytelling">
       <h2 class="theme">Storytelling</h2>
@@ -53,3 +54,20 @@ import BaseHead from "../components/BaseHead.astro";
   </nav>
 </body>
 </html>
+
+<style>
+  body {
+    max-width: 1300px;
+    margin: 2rem auto;
+  }
+
+  .logo {
+    display: block;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  nav.center {
+    justify-content: center;
+  }
+</style>

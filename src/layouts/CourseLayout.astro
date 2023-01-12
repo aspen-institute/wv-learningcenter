@@ -1,5 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro"
+import NavHeader from "../components/NavHeader.astro"
 
 const { frontmatter : FM } = Astro.props
 ---
@@ -7,6 +8,7 @@ const { frontmatter : FM } = Astro.props
   <BaseHead title={FM.title} />
   <body>
     <main class="course-content">
+      <NavHeader/>
       <header class="course-introduction">
         <h1>{FM.title}</h1>
         <p class="course-description">{FM.intro}</p>

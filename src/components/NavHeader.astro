@@ -1,0 +1,35 @@
+---
+import '../../styles/learningcenter.scss';
+export interface Props {
+  hideLogo?: Boolean;
+}
+
+const { hideLogo = false, class: className } = Astro.props;
+---
+<nav class={className}>
+  {!hideLogo
+    ? <a href="/"><img class="logo" src="/wv-learningcenter-logo.svg" alt="Weave Learning Center"></a>
+    : null
+  }
+  <a href="https://community.weavers.org/">Join our Community</a>
+  <a href="https://weavers.org">About Weave</a>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    gap: 1em;
+    font-family: sans-serif; /* TODO: better Avenir */
+    margin-bottom: 2rem;
+  }
+
+  nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 2em;
+  }
+</style>
