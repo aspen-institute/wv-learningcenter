@@ -51,6 +51,12 @@ blockquote {
   font-style: italic;
 }
 
+.site-introduction {
+  max-width: 1100px;
+  margin: 2em auto;
+}
+
+.site-introduction,
 .course-introduction {
   font-size: 1.2em;
   color: var(--blue-community);
