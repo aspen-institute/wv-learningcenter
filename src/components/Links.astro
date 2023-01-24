@@ -2,7 +2,7 @@
 interface Link {
   href: URL,
   text: String,
-  assessment: Boolean
+  assessment?: Boolean
 }
 
 export interface Props {
@@ -10,9 +10,24 @@ export interface Props {
 }
 
 const { items } = Astro.props;
+
+const isTrue = (bool: Boolean) => bool
 ---
+
+
+{items.map(link => link.assessment).some(isTrue)
+  ? <p class="assessment-intro">Once you feel ready, click below to take the final Certificate of Completion. A Weave Leader will reach out with your results and next steps. You can retry later if needed.</p>
+  : null
+}
 <div class="links">
   {items.map(link =>
+
     <a class={link.assessment ? 'assessment' : null} target="_blank" href={link.href}>{link.text}</a>
   )}
 </div>
+
+<style>
+  .assessment-intro {
+    font-weight: 525;
+  }
+</style>
