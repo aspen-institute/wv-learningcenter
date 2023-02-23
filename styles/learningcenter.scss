@@ -226,6 +226,7 @@ nav.grid {
     padding: 1rem;
     color: white;
     background-color: var(--green-perseverance);
+    overflow: hidden; // TODO: figure out how to let text expand tho
 
     &::after {
       content: url(/wv-logo-square-white.svg);
