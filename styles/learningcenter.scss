@@ -229,16 +229,19 @@ nav.grid {
     overflow: hidden; // TODO: figure out how to let text expand tho
 
     &::after {
-      content: url(/wv-logo-square-white.svg);
+      content: url("/public/wv-logo-square-white.svg");
       display: block;
       position: absolute;
       bottom: -10%;
       right: -10%;
       width: 50%;
-      transition: transform 0.5s;
+      height: 50%;
+      transform-origin: 50% 50%;
+      transition: none;
     }
 
     &:hover::after {
+      transition: transform 0.5s;
       transform: rotate(90deg);
     }
 
