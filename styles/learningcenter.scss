@@ -220,11 +220,26 @@ nav.grid {
     // courses
     color: white;
     display: block;
+    position: relative;
     aspect-ratio: 1 / 1;
     overflow-y: scroll;
     padding: 1rem;
     color: white;
     background-color: var(--green-perseverance);
+
+    &::after {
+      content: url(/wv-logo-square-white.svg);
+      display: block;
+      position: absolute;
+      bottom: -10%;
+      right: -10%;
+      width: 50%;
+      transition: transform 0.5s;
+    }
+
+    &:hover::after {
+      transform: rotate(90deg);
+    }
 
     &.storytelling {
       background-color: var(--blue-community);
