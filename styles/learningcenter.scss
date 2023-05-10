@@ -29,6 +29,7 @@
   --yellow-joy: #f99b1c;
   --green-perseverance: #18783c;
   scroll-behavior: smooth;
+  scroll-padding: 67px;
 }
 
 body {
@@ -111,6 +112,13 @@ blockquote {
     top: 0;
     background-color: var(--bg-color);
     border-bottom: 0.5rem solid currentColor;
+
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    &:not(:hover) {
+      // to keep heights 68px for body#scroll-padding
+      white-space: nowrap;
+    }
   }
 }
 
