@@ -102,6 +102,14 @@ blockquote {
     }
   }
 
+  @media screen and (max-width: 500px) {
+    margin-left: 0;
+
+    .course-toc {
+      display: none;
+    }
+  }
+
   h1, h2, h3, nav, .links a {
     color: var(--blue-community);
   }
@@ -237,7 +245,7 @@ nav.grid {
     overflow: hidden; // TODO: figure out how to let text expand tho
 
     &::after {
-      content: url("/public/wv-logo-square-white.svg");
+      content: url("/wv-logo-square-white.svg");
       display: block;
       position: absolute;
       bottom: -10%;
