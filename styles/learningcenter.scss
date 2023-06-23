@@ -237,7 +237,7 @@ nav.grid {
     overflow: hidden; // TODO: figure out how to let text expand tho
 
     &::after {
-      content: url("/public/wv-logo-square-white.svg");
+      content: url("/wv-logo-square-white.svg");
       display: block;
       position: absolute;
       bottom: -10%;
