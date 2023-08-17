@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'Weave Learning Center',
 
-  projectId: 'kj43cytd',
-  dataset: 'production',
+  projectId: process.env.SANITY_STUDIO_PROJECTID,
+  dataset: process.env.SANITY_STUDIO_DATASET,
 
   plugins: [deskTool(), visionTool()],
 

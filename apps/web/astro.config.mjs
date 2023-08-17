@@ -18,8 +18,8 @@ export default defineConfig({
   integrations: [
     mdx(),
     sanity({
-      projectId: process.env.SANITY_PROJECTID,
-      dataset: process.env.SANITY_DATASET,
+      projectId: process.env.SANITY_STUDIO_PROJECTID,
+      dataset: process.env.SANITY_STUDIO_DATASET,
       apiVersion: '2021-03-25',
       useCdn: true,
     })
