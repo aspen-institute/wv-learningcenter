@@ -15,5 +15,13 @@ export default defineConfig({
       }
     }]]
   },
-  integrations: [mdx(), sanity()]
+  integrations: [
+    mdx(),
+    sanity({
+      projectId: process.env.SANITY_PROJECTID,
+      dataset: process.env.SANITY_DATASET,
+      apiVersion: '2021-03-25',
+      useCdn: true,
+    })
+  ]
 });

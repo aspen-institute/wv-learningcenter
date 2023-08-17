@@ -3,5 +3,12 @@
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "npm@9.8.1"
+  "scripts": {
+    "dev": "dotenv -- turbo dev"
+  },
+  "packageManager": "npm@9.8.1",
+  "devDependencies": {
+    "dotenv-cli": "^7.3.0",
+    "turbo": "^1.10.12"
+  }
 }
