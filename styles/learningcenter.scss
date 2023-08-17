@@ -29,6 +29,7 @@
   --yellow-joy: #f99b1c;
   --green-perseverance: #18783c;
   scroll-behavior: smooth;
+  scroll-padding: 67px;
 }
 
 body {
@@ -101,6 +102,14 @@ blockquote {
     }
   }
 
+  @media screen and (max-width: 700px) {
+    margin-left: 0;
+
+    .course-toc {
+      display: none;
+    }
+  }
+
   h1, h2, h3, nav, .links a {
     color: var(--blue-community);
   }
@@ -111,6 +120,13 @@ blockquote {
     top: 0;
     background-color: var(--bg-color);
     border-bottom: 0.5rem solid currentColor;
+
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    &:not(:hover) {
+      // to keep heights 68px for body#scroll-padding
+      white-space: nowrap;
+    }
   }
 }
 
@@ -229,7 +245,7 @@ nav.grid {
     overflow: hidden; // TODO: figure out how to let text expand tho
 
     &::after {
-      content: url("/public/wv-logo-square-white.svg");
+      content: url("/wv-logo-square-white.svg");
       display: block;
       position: absolute;
       bottom: -10%;
