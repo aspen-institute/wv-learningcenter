@@ -4,6 +4,8 @@ import rehypeSlug from 'rehype-slug';
 import mdx from "@astrojs/mdx";
 import sanity from "astro-sanity";
 
+import starlight from "@astrojs/starlight";
+
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -15,13 +17,10 @@ export default defineConfig({
       }
     }]]
   },
-  integrations: [
-    mdx(),
-    sanity({
-      projectId: process.env.SANITY_STUDIO_PROJECTID,
-      dataset: process.env.SANITY_STUDIO_DATASET,
-      apiVersion: '2021-03-25',
-      useCdn: true,
-    })
-  ]
+  integrations: [mdx(), sanity({
+    projectId: process.env.SANITY_STUDIO_PROJECTID,
+    dataset: process.env.SANITY_STUDIO_DATASET,
+    apiVersion: '2021-03-25',
+    useCdn: true
+  }), starlight()]
 });
