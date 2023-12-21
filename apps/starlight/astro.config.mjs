@@ -11,6 +11,10 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: 'Courses',
+					autogenerate: { directory: 'courses' },
+				},
+				{
 					label: 'Storytelling',
 					items: [
 						{ label: 'Public Narrative', link: 'https://learning.weavers.org/storytelling/public-narrative' },
