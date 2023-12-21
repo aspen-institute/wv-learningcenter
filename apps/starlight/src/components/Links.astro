@@ -30,4 +30,47 @@ const isTrue = (bool: Boolean) => bool
   .assessment-intro {
     font-weight: 525;
   }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    align-items: stretch;
+  }
+
+  .links a {
+    /* min width */
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    /* vertical align text, same height by row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    background-color: var(--yellow-joy);
+    box-sizing: border-box;
+
+    text-align: center;
+    padding: 3em;
+    border-radius: 1em;
+    border: 0 solid currentColor;
+    transition: border-width 0.2s, padding 0.2s;
+  }
+
+  .links a:hover {
+    padding: 2.5em;
+    border-width: 0.5em;
+  }
+
+  .links.assessment a,
+  .links a.assessment {
+    background-color: var(--green-perseverance);
+    color: var(--bg-color);
+    border-color: var(--yellow-joy);
+  }
 </style>
