@@ -16,8 +16,27 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'All Courses',
-					autogenerate: { directory: 'courses' },
+					label: 'Storytelling',
+					items: [
+						{ label: 'Public Narrative', link: 'https://learning.weavers.org/storytelling/public-narrative' },
+						{ label: 'Public Speaking', link: 'https://learning.weavers.org/storytelling/public-speaking' },
+					],
+				},
+				{
+					label: 'Gathering',
+					items: [
+						{ label: 'Facilitating Groups', link: 'https://learning.weavers.org/gathering/group-facilitation/' },
+						{ label: 'Facilitating Circles', link: 'https://learning.weavers.org/gathering/circle-facilitation' },
+					],
+				},
+				{
+					label: 'Action: ABCD',
+					items: [
+						{
+							label: 'Asset-Based Community Development',
+							autogenerate: { directory: 'courses/asset-based-community-development' },
+						},
+					],
 				}
 			],
 			customCss: [
