@@ -7,7 +7,7 @@ export default defineConfig({
 		starlight({
 			title: 'Weave Learning Center',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				email: 'mailto:weave@aspeninstitute.org',
 			},
 			sidebar: [
 				{
