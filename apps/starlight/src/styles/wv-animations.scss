@@ -1,0 +1,13 @@
+a.course {
+  text-decoration: none;
+  color: inherit;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  display: block;
+  perspective: 500px;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}
+

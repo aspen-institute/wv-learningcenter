@@ -3,28 +3,69 @@ title: Weave Learning Center
 description: New homepage TK
 template: splash
 hero:
-  tagline: New homepage TK
-  image:
-    file: ../../assets/houston.webp
+  tagline: |
+    Whether you have deep experience weaving in your community, want to add skills to your practice, or are new to weaving, we hope the Weave Learning Center will provide helpful knowledge and inspiration.
+    
+    Once you complete a lesson or unit, you’ll find an opportunity to submit a Reflection and earn a Certificate of Completion. To earn the certificate and join conversations, you’ll need to become a member of our free online community. We hope to see you there soon!
   actions:
-    - text: ABCD (demo)
-      link: /courses/asset-based-community-development/
+    - text: Join the Weave Community
+      link: https://community.weavers.org/pages/welcome
+      icon: right-arrow
+      variant: secondary
+    - text: Start Learning
+      link: "#available-courses"
       icon: right-arrow
       variant: primary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Categories
+# Available Courses
 
-<CardGrid stagger>
-	<Card title="Storytelling" icon="open-book">
-		Sharing values
-	</Card>
-	<Card title="Gatherings" icon="translate">
-		Facilitating conversations
-	</Card>
-	<Card title="Action" icon="rocket">
-		Leading community changes
-	</Card>
+## Storytelling
+### Sharing values
+
+<CardGrid class="perspective">
+	<a href="/courses/public-narrative" class="course storytelling">
+		<Card title="Public Narrative" icon="open-book">
+			<p>Learn the practice of telling your story, sharing with others to connect across shared values, and moving together with trust on issues of urgency.</p>
+			<p class="partner">In collaboration with Leading Change Network</p>
+		</Card>
+	</a>
+	<a href="/courses/public-speaking" class="course storytelling">
+		<Card title="Public Speaking" icon="open-book">
+      <p><em>Early signup:</em> Learn to become a confident public speaker through live workshops and solo practice.</p>
+			<p class="partner">In collaboration with Lightbox Collaborative</p>
+		</Card>
+	</a>
+</CardGrid>
+
+## Gatherings
+### Facilitaging conversation
+
+<CardGrid class="perspective">
+	<a href="/courses/facilitating-groups" class="course gatherings">
+		<Card title="Facilitating Groups" icon="translate">
+			<p>Learn how to bring weavers together to engage in dialogue in a way that builds bridges, connection, and trust.</p>
+			<p class="partner">In collaboration with The People’s Supper</p>
+		</Card>
+	</a>
+	<a href="/courses/facilitating-circles" class="course gatherings">
+		<Card title="Facilitating Circles" icon="translate">
+			<p>Learn the practice and history of Circles, and how to form and lead one.</p>
+			<p class="partner">In collaboration with Restorative Strategies</p>
+		</Card>
+	</a>
+</CardGrid>
+
+## Action
+### Leading community change
+
+<CardGrid class="perspective">
+	<a href="/courses/asset-based-community-development/" class="course action">
+		<Card title="Asset-Based Community Development" icon="rocket">
+			<p>Learn the practice of telling your story, sharing with others to connect across shared values, and moving together with trust on issues of urgency.</p>
+			<p class="partner">In collaboration with Leading Change Network</p>
+		</Card>
+	</a>
 </CardGrid>
