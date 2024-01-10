@@ -37,7 +37,7 @@ export default defineConfig({
 							autogenerate: { directory: 'courses/asset-based-community-development' },
 						},
 					],
-				}
+				},
 			],
 			customCss: [
 				'./src/styles/wv-colors.scss'
