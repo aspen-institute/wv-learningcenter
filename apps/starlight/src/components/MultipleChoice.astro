@@ -1,18 +1,16 @@
 ---
-import { useTranslations } from '~/i18n/util';
 
-const t = useTranslations(Astro);
 ---
 
 <multiple-choice
-	data-correct-label={t('multipleChoice.defaultCorrect')}
-	data-incorrect-label={t('multipleChoice.defaultIncorrect')}
+	data-correct-label="Correct!"
+	data-incorrect-label="Try again."
 >
 	<form onsubmit="event.preventDefault()">
 		<ol class="opt-list not-content"><slot /></ol>
 		<div class="footer">
 			<button class="submit" type="submit" disabled>
-				{t('multipleChoice.submitLabel')}
+				Submit
 			</button>
 			<div class="answer sr-only" role="alert"></div>
 		</div>
