@@ -8,35 +8,62 @@ import { rehypeTasklistEnhancer } from './plugins/rehype-tasklist-enhancer';
 
 // https://astro.build/config
 export default defineConfig({
+	redirects: {
+		'/gathering/group-facilitation': '/courses/group-facilitation',
+		'/gathering/circle-facilitation': '/courses/circle-facilitation',
+		'/action/asset-based-community-development': '/courses/asset-based-community-development',
+		'/storytelling/public-speaking': 'https://legacy.learning.weavers.org/storytelling/public-narrative',
+		'/storytelling/public-narrative': '/courses/public-narrative'
+	},
 	integrations: [
 		starlight({
 			title: 'Weave Learning Center',
 			social: {
 				email: 'mailto:weave@aspeninstitute.org',
 			},
+			// TODO: set some custom badge variants https://starlight.astro.build/guides/sidebar/#badges
 			sidebar: [
 				{
-					label: 'Storytelling',
-					items: [
-						{ label: 'Public Narrative', link: 'https://learning.weavers.org/storytelling/public-narrative' },
-						{ label: 'Public Speaking', link: 'https://learning.weavers.org/storytelling/public-speaking' },
-					],
+					label: 'Asset-Based Community Development',
+					badge: {
+						text: 'Action',
+						variant: 'caution'
+					},
+					autogenerate: { directory: 'courses/asset-based-community-development' },
 				},
 				{
-					label: 'Gathering',
-					items: [
-						{ label: 'Facilitating Groups', link: 'https://learning.weavers.org/gathering/group-facilitation/' },
-						{ label: 'Facilitating Circles', link: 'https://learning.weavers.org/gathering/circle-facilitation' },
-					],
+					label: 'Facilitating Circles',
+					badge: {
+						text: 'Gatherings',
+						variant: 'danger'
+					},
+					autogenerate: { directory: 'courses/circle-facilitation' },
 				},
 				{
-					label: 'Action: ABCD',
-					items: [
-						{
-							label: 'Asset-Based Community Development',
-							autogenerate: { directory: 'courses/asset-based-community-development' },
-						},
-					],
+					label: 'Facilitating Groups',
+					badge: {
+						text: 'Gatherings',
+						variant: 'danger'
+					},
+					autogenerate: { directory: 'courses/group-facilitation' },
+				},
+				{
+					label: 'Public Narrative',
+					badge: {
+						text: 'Storytelling',
+						variant: 'tip'
+					},
+					link: 'https://learning.weavers.org/storytelling/public-narrative',
+					// autogenerate: { directory: 'courses/public-narrative' },
+				},
+				{
+					label: 'Public Speaking',
+					badge: {
+						text: 'Coming Soon',
+						variant: 'success'
+					},
+					link: '#',
+					// autogenerate: { directory: 'courses/public-speaking' },
 				},
 			],
 			customCss: [
