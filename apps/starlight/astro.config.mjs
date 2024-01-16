@@ -6,8 +6,16 @@ import remarkSmartypants from 'remark-smartypants';
 
 import { rehypeTasklistEnhancer } from './plugins/rehype-tasklist-enhancer';
 
+const VERCEL_PREVIEW_SITE =
+	process.env.VERCEL_ENV !== 'production' &&
+	process.env.VERCEL_URL &&
+	`https://${process.env.VERCEL_URL}`;
+
+const siteURL = VERCEL_PREVIEW_SITE || 'https://learning.weavers.org/';
+
 // https://astro.build/config
 export default defineConfig({
+	site: siteURL,
 	redirects: {
 		'/gathering/group-facilitation': '/courses/group-facilitation',
 		'/gathering/circle-facilitation': '/courses/circle-facilitation',
