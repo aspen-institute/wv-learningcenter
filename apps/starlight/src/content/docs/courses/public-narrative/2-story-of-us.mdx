@@ -3,6 +3,7 @@ title: Story of Us
 ---
 import Links from '~/components/Links.astro'
 import Embed from '~/components/Embed.astro'
+import { Image } from 'astro:assets'
 
 ## Introduction
 
@@ -22,7 +23,7 @@ Although the reach of a story of us may extend far beyond “people in the room�
 
 import imgMainCharacter from './maincharacter.png'
 
-<img src={imgMainCharacter} alt="Title: The main character is 'US'; lightning bolt labeled A) Challenge zapping a dot labeled B) Choice, out of which an arrow labeled C) Outcome points in a different direction"/>
+<Image src={imgMainCharacter} alt="Title: The main character is 'US'; lightning bolt labeled A) Challenge zapping a dot labeled B) Choice, out of which an arrow labeled C) Outcome points in a different direction"/>
 
 ### The Challenge
 The challenges “people in the room” have faced in the past, or face now (made real with stories, images, and details, not statistics).
