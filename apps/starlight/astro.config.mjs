@@ -37,8 +37,7 @@ export default defineConfig({
 						text: 'Storytelling',
 						variant: 'tip'
 					},
-					link: 'https://learning.weavers.org/storytelling/public-narrative',
-					// autogenerate: { directory: 'courses/public-narrative' },
+					autogenerate: { directory: 'courses/public-narrative' },
 				},
 				{
 					label: 'Public Speaking',
