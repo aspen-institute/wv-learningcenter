@@ -32,12 +32,22 @@ export default defineConfig({
 			// TODO: set some custom badge variants https://starlight.astro.build/guides/sidebar/#badges
 			sidebar: [
 				{
-					label: 'Asset-Based Community Development',
+					label: 'Public Narrative',
 					badge: {
-						text: 'Action',
-						variant: 'caution'
+						text: 'Storytelling',
+						variant: 'tip'
 					},
-					autogenerate: { directory: 'courses/asset-based-community-development' },
+					link: 'https://learning.weavers.org/storytelling/public-narrative',
+					// autogenerate: { directory: 'courses/public-narrative' },
+				},
+				{
+					label: 'Public Speaking',
+					badge: {
+						text: 'Coming Soon',
+						variant: 'success'
+					},
+					link: '#',
+					// autogenerate: { directory: 'courses/public-speaking' },
 				},
 				{
 					label: 'Facilitating Circles',
@@ -56,22 +66,12 @@ export default defineConfig({
 					autogenerate: { directory: 'courses/group-facilitation' },
 				},
 				{
-					label: 'Public Narrative',
+					label: 'Asset-Based Community Development',
 					badge: {
-						text: 'Storytelling',
-						variant: 'tip'
+						text: 'Action',
+						variant: 'caution'
 					},
-					link: 'https://learning.weavers.org/storytelling/public-narrative',
-					// autogenerate: { directory: 'courses/public-narrative' },
-				},
-				{
-					label: 'Public Speaking',
-					badge: {
-						text: 'Coming Soon',
-						variant: 'success'
-					},
-					link: '#',
-					// autogenerate: { directory: 'courses/public-speaking' },
+					autogenerate: { directory: 'courses/asset-based-community-development' },
 				},
 			],
 			customCss: [
