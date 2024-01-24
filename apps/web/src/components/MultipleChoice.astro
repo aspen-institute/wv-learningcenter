@@ -176,6 +176,7 @@
 			option.addEventListener('change', () => {
 				this.#clearAnswer();
 				this.#enableSubmit();
+				fathom.trackEvent('MultipleChoice answer selected');
 			});
 			if (option.checked) this.#enableSubmit();
 		}
@@ -227,6 +228,7 @@
 				selection.dataset.isCorrect !== undefined &&
 				['', 'true'].includes(selection.dataset.isCorrect);
 			this.#setAnswer(isCorrect);
+			fathom.trackEvent('MultipleChoice submitted');
 		}
 	}
 
