@@ -1,7 +1,8 @@
 ---
 import '../../styles/learningcenter.scss';
 export interface Props {
-  hideLogo?: Boolean;
+  class: string,
+  hideLogo?: Boolean,
 }
 
 const { hideLogo = false, class: className } = Astro.props;

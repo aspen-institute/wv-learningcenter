@@ -1,27 +1,106 @@
 import { defineConfig } from 'astro/config';
-import rehypeToc from 'rehype-toc';
+import starlight from '@astrojs/starlight';
+
 import rehypeSlug from 'rehype-slug';
-import mdx from "@astrojs/mdx";
-import sanity from "astro-sanity";
+import remarkSmartypants from 'remark-smartypants';
+
+import { rehypeTasklistEnhancer } from './plugins/rehype-tasklist-enhancer';
+
+const VERCEL_PREVIEW_SITE =
+	process.env.VERCEL_ENV !== 'production' &&
+	process.env.VERCEL_URL &&
+	`https://${process.env.VERCEL_URL}`;
+
+const siteURL = VERCEL_PREVIEW_SITE || 'https://learning.weavers.org/';
 
 // https://astro.build/config
 export default defineConfig({
-  markdown: {
-    extendPlugins: 'astroDefaults',
-    rehypePlugins: [rehypeSlug, [rehypeToc, {
-      headings: ['h2', 'h3'],
-      cssClasses: {
-        toc: 'course-toc'
-      }
-    }]]
-  },
-  integrations: [
-    mdx(),
-    sanity({
-      projectId: process.env.SANITY_STUDIO_PROJECTID,
-      dataset: process.env.SANITY_STUDIO_DATASET,
-      apiVersion: '2021-03-25',
-      useCdn: true,
-    })
-  ]
+	site: siteURL,
+	redirects: {
+		'/gathering/group-facilitation': '/courses/group-facilitation',
+		'/gathering/circle-facilitation': '/courses/circle-facilitation',
+		'/action/asset-based-community-development': '/courses/asset-based-community-development',
+		'/storytelling/public-speaking': 'https://legacy.learning.weavers.org/storytelling/public-narrative',
+		'/storytelling/public-narrative': '/courses/public-narrative'
+	},
+	integrations: [
+		starlight({
+			title: 'Weave Learning Center',
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						src: 'https://cdn.usefathom.com/script.js',
+						'data-site': 'TMSFJGNL',
+						defer: true,
+					},
+				}
+			],
+			favicon: '/favicon.png',
+			social: {
+				email: 'mailto:weave@aspeninstitute.org',
+			},
+			// TODO: set some custom badge variants https://starlight.astro.build/guides/sidebar/#badges
+			sidebar: [
+				{
+					label: 'Public Narrative',
+					badge: {
+						text: 'Storytelling',
+						variant: 'tip'
+					},
+					autogenerate: { directory: 'courses/public-narrative' },
+				},
+				{
+					label: 'Public Speaking',
+					badge: {
+						text: 'Coming Soon',
+						variant: 'success'
+					},
+					link: '#',
+					// autogenerate: { directory: 'courses/public-speaking' },
+				},
+				{
+					label: 'Facilitating Circles',
+					badge: {
+						text: 'Gatherings',
+						variant: 'danger'
+					},
+					autogenerate: { directory: 'courses/circle-facilitation' },
+				},
+				{
+					label: 'Facilitating Groups',
+					badge: {
+						text: 'Gatherings',
+						variant: 'danger'
+					},
+					autogenerate: { directory: 'courses/group-facilitation' },
+				},
+				{
+					label: 'Asset-Based Community Development',
+					badge: {
+						text: 'Action',
+						variant: 'caution'
+					},
+					autogenerate: { directory: 'courses/asset-based-community-development' },
+				},
+			],
+			customCss: [
+				'./src/styles/wv-colors.scss',
+				'./src/styles/wv-animations.scss',
+			],
+		}),
+	],
+	trailingSlash: 'always',
+	markdown: {
+		// Override with our own config
+		smartypants: false,
+		remarkPlugins: [
+			remarkSmartypants,
+		],
+		rehypePlugins: [
+			rehypeSlug,
+			// Tweak GFM task list syntax
+			rehypeTasklistEnhancer(),
+		],
+	},
 });

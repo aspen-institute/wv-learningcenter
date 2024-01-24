@@ -1,0 +1,31 @@
+:root {
+  --blue-community: #262869;
+  --red-strength: #9b1c20;
+  --yellow-joy: #f99b1c;
+  --green-perseverance: #18783c;
+  scroll-behavior: smooth;
+  scroll-padding: 67px;
+}
+
+:root {
+  --sl-hue-accent: 255;
+  --sl-color-accent-low: hsl(var(--sl-hue-accent), 14%, 20%);
+  --sl-color-accent: var(--blue-community);
+  --sl-color-accent-high: hsl(var(--sl-hue-accent), 60%, 87%);
+  --overlay-blurple: hsla(var(--sl-hue-accent), 60%, 60%, 0.2);
+}
+
+:root[data-theme='light'] {
+  --sl-hue-accent: 45; /*Color of top bar text and icons and Getting Started button*/
+  --sl-color-accent-high: hsl(var(--sl-hue-accent), 90%, 20%);
+  --sl-color-accent: var(--blue-community);
+  --sl-color-accent-low: hsl(var(--sl-hue-accent), 98%, 80%);
+}
+
+#starlight__sidebar {
+  background: var(--blue-community);
+  --sl-color-text: white;
+  --sl-color-white: white;
+  --sl-color-text-invert: var(--yellow-joy);
+  --sl-color-gray-2: #dcdcdc;
+}
