@@ -176,6 +176,7 @@
 			option.addEventListener('change', () => {
 				this.#clearAnswer();
 				this.#enableSubmit();
+				// @ts-ignore: Cannot find name
 				fathom.trackEvent('MultipleChoice answer selected');
 			});
 			if (option.checked) this.#enableSubmit();
@@ -228,6 +229,7 @@
 				selection.dataset.isCorrect !== undefined &&
 				['', 'true'].includes(selection.dataset.isCorrect);
 			this.#setAnswer(isCorrect);
+			// @ts-ignore: Cannot find name
 			fathom.trackEvent('MultipleChoice submitted');
 		}
 	}

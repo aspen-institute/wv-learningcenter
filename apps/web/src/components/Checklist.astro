@@ -149,6 +149,7 @@ const { key = 'default' } = Astro.props as Props;
 				const input = e.currentTarget as HTMLInputElement;
 				const { checked } = input;
 				ProgressStore.setSubListItem(this.key, type, index, checked);
+				// @ts-ignore: Cannot find name
 				fathom.trackEvent('Checklist item toggled');
 			});
 		}
