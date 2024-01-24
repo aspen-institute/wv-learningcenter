@@ -26,6 +26,17 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Weave Learning Center',
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						src: 'https://cdn.usefathom.com/script.js',
+						'data-site': 'TMSFJGNL',
+						defer: true,
+					},
+				}
+			],
+			favicon: '/favicon.png',
 			social: {
 				email: 'mailto:weave@aspeninstitute.org',
 			},
