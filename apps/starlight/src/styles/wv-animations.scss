@@ -1,4 +1,4 @@
-a.course {
+.course {
   text-decoration: none;
 
   .card {
@@ -39,5 +39,10 @@ a.course {
   &:hover .card {
     transform: rotateY(180deg);
   }
-}
 
+  &.coming-soon .card::after {
+    content: 'Coming soon';
+    border: 1px solid gold;
+    background: var(--yellow-joy);
+  }
+}
