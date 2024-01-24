@@ -1,5 +1,5 @@
 {
-  "name": "wv-learningcenter-web",
+  "name": "wv-learningcenter-weblegacy",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
