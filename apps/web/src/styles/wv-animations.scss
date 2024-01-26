@@ -19,7 +19,7 @@
       font-style: italic;
       font-weight: medium;
 
-      background: var(--green-perseverance);
+      background-color: white;
       border: 1px solid darkgreen;
 
       position: absolute;
@@ -42,7 +42,23 @@
 
   &.coming-soon .card::after {
     content: 'Coming soon';
-    border: 1px solid gold;
-    background: var(--yellow-joy);
+    border-width: 5px;
+    border-style: dotted;
+    cursor: wait;
+  }
+
+  &.storytelling .card:after {
+    border-color: #ddcccccc;
+    background-color: var(--blue-community)
+  }
+
+  &.gatherings .card::after {
+    border-color: #ddcccccc;
+    background-color: var(--red-strength)
+  }
+
+  &.action .card::after {
+    border-color: #ddcccccc;
+    background-color: var(--yellow-joy)
   }
 }
