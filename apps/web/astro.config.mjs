@@ -26,6 +26,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Weave Learning Center',
+			logo: {
+				light: '/src/assets/wv-learningcenter-logo.svg',
+				dark: '/src/assets/wv-learningcenter-logo-white.svg',
+				replacesTitle: true,
+			},
 			head: [
 				{
 					tag: 'script',
