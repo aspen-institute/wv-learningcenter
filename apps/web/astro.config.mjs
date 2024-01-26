@@ -49,6 +49,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Public Narrative',
+					collapsed: true,
 					badge: {
 						text: 'Storytelling',
 						variant: 'tip'
@@ -57,6 +58,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Public Speaking',
+					collapsed: true,
 					badge: {
 						text: 'Coming Soon',
 						variant: 'success'
@@ -66,6 +68,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Facilitating Circles',
+					collapsed: true,
 					badge: {
 						text: 'Gatherings',
 						variant: 'danger'
@@ -74,6 +77,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Facilitating Groups',
+					collapsed: true,
 					badge: {
 						text: 'Gatherings',
 						variant: 'danger'
@@ -82,6 +86,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Asset-Based Community Development',
+					collapsed: true,
 					badge: {
 						text: 'Action',
 						variant: 'caution'
