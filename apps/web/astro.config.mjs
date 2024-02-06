@@ -93,6 +93,15 @@ export default defineConfig({
 					},
 					autogenerate: { directory: 'courses/asset-based-community-development' },
 				},
+				{
+					label: 'Atlas CareMapping',
+					collapsed: true,
+					badge: {
+						text: 'Action',
+						variant: 'caution'
+					},
+					autogenerate: { directory: 'courses/caremapping' },
+				},
 			],
 			customCss: [
 				'./src/styles/wv-colors.scss',
