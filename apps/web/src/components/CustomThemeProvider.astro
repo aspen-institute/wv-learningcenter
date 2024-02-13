@@ -1,0 +1,7 @@
+---
+import Default from '@astrojs/starlight/components/ThemeProvider.astro'
+import SpeedInsights from '@vercel/speed-insights/astro'
+---
+<Default {...Astro.props}><slot/></Default>
+<!-- overriding Head.astro causes all kinds of messes, and this is the only other overrideable Head element -->
+<SpeedInsights />

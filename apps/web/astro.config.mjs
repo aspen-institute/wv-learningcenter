@@ -33,6 +33,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Weave Learning Center',
+			components: {
+				ThemeProvider: '/src/components/CustomThemeProvider.astro',
+			},
 			logo: {
 				light: '/src/assets/wv-learningcenter-logo.svg',
 				dark: '/src/assets/wv-learningcenter-logo-white.svg',
