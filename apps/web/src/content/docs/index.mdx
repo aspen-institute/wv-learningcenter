@@ -11,14 +11,18 @@ hero:
   image:
     file: ~/assets/wv-logo-square.svg
   actions:
+    - text: Join the Weave Online Community
+      link: https://community.weavers.org/pages/welcome
+      icon: right-arrow
+      variant: secondary
+    - text: Live Workshops
+      link: https://calendly.com/weareweavers/
+      icon: star
+      variant: secondary
     - text: Start Learning
       link: "#available-courses"
       icon: right-arrow
       variant: primary
-    - text: Live Workshops
-      link: /courses/circle-facilitation/#live-workshops
-      icon: star
-      variant: secondary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
@@ -79,12 +83,12 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		</Card>
 	</a>
 
-	<a href="/courses/caremapping/" class="course action">
+	<div class="course action coming-soon">
 		<Card title="CareMapping" icon="rocket">
 			<p>Discover and strengthen your bonds of love and care.</p>
       <p class="partner">In collaboration with Atlas of Care</p>
 		</Card>
-	</a>
+	</div>
 
 </CardGrid>
 
