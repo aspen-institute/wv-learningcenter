@@ -4,6 +4,9 @@ title: Story of Us
 import Links from '~/components/Links.astro'
 import Embed from '~/components/Embed.astro'
 import { Image } from 'astro:assets'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
+import Box from '~/components/Box.astro'
 
 ## Introduction
 
@@ -58,12 +61,25 @@ Now it’s your turn to practice writing your Story of Us. Download this workshe
   }]}
 />
 
-## Lesson Reflection
+<Box>
 
-<Links
-  items={[{
-    assessment: true,
-    href: "https://community.weavers.org/pages/lc-reflection-story-of-us",
-    text: "Reflect on this lesson"
-  }]}
-/>
+  ## Test your knowledge
+
+  Which statement about the Story of Us is **false**?
+
+  <MultipleChoice>
+    <Option>
+      It must be a shared story of the people in the room
+    </Option>
+    <Option>
+      It includes the elements of Challenge, Choice, and Outcome
+    </Option>
+    <Option isCorrect>
+      It can be based on something the group will do together in the future
+    </Option>
+    <Option>
+      It reveals shared values
+    </Option>
+  </MultipleChoice>
+
+</Box>
