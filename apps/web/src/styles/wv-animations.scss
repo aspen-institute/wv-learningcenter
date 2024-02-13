@@ -61,4 +61,9 @@
     border-color: #ddcccccc;
     background-color: var(--yellow-joy)
   }
+
+  &.leadership .card::after {
+    border-color: #ddcccccc;
+    background-color: var(--green-perseverance)
+  }
 }
