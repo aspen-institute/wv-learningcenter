@@ -24,7 +24,7 @@ export default defineConfig({
 		'/storytelling/public-speaking': 'https://legacy.learning.weavers.org/storytelling/public-narrative',
 		'/storytelling/public-narrative': '/courses/public-narrative'
 	},
-	output: 'server',
+	output: 'hybrid',
 	adapter: vercel({
 		webAnalytics: {
 			enabled: true,
