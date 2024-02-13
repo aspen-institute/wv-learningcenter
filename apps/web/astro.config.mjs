@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import vercel from '@astrojs/vercel/serverless';
 
 import rehypeSlug from 'rehype-slug';
 import remarkSmartypants from 'remark-smartypants';
@@ -24,18 +23,9 @@ export default defineConfig({
 		'/storytelling/public-speaking': 'https://legacy.learning.weavers.org/storytelling/public-narrative',
 		'/storytelling/public-narrative': '/courses/public-narrative'
 	},
-	output: 'hybrid',
-	adapter: vercel({
-		webAnalytics: {
-			enabled: true,
-		},
-	}),
 	integrations: [
 		starlight({
 			title: 'Weave Learning Center',
-			components: {
-				ThemeProvider: '/src/components/CustomThemeProvider.astro',
-			},
 			logo: {
 				light: '/src/assets/wv-learningcenter-logo.svg',
 				dark: '/src/assets/wv-learningcenter-logo-white.svg',
