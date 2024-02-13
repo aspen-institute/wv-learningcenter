@@ -4,6 +4,9 @@ title: Story of Now
 import Links from '~/components/Links.astro'
 import Embed from '~/components/Embed.astro'
 import { Image } from 'astro:assets'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
+import Box from '~/components/Box.astro'
 
 ## Introduction
 
@@ -70,12 +73,25 @@ Now it is your turn to practice crafting your story. What urgent challenge that 
   }]}
 />
 
-## Lesson Reflection
+<Box>
 
-<Links
-  items={[{
-    assessment: true,
-    href: "https://community.weavers.org/pages/lc-reflection-story-of-now",
-    text: "Reflect on this lesson"
-  }]}
-/>
+  ## Test your knowledge
+
+  TK?
+
+  <MultipleChoice>
+    <Option>
+      It describes a choice to take strategic action together with urgency
+    </Option>
+    <Option>
+      It warns of what will happen if we don’t act
+    </Option>
+    <Option>
+      It is a hopeful story
+    </Option>
+    <Option isCorrect>
+      It includes Challenge, Choice, and Goals
+    </Option>
+  </MultipleChoice>
+
+</Box>

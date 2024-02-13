@@ -3,6 +3,9 @@ title: Linking Story
 ---
 import Links from '~/components/Links.astro'
 import Embed from '~/components/Embed.astro'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
+import Box from '~/components/Box.astro'
 
 ## Introduction
 
@@ -45,12 +48,25 @@ We'll be watching a five-minute Public Narrative by Maung Nyeu. While you watch 
   }]}
 />
 
-## Lesson Reflection
+<Box>
 
-<Links
-  items={[{
-    assessment: true,
-    href: "https://community.weavers.org/pages/lc-reflection-linking-story",
-    text: "Reflect on this lesson"
-  }]}
-/>
+  ## Test your knowledge
+
+  Choose the answer that best describes a Linking Story?
+
+  <MultipleChoice>
+    <Option>
+      It combines the Stories of Self, Us, and Now
+    </Option>
+    <Option>
+      A Linking Story is also called Public Narrative
+    </Option>
+    <Option isCorrect>
+      Both A and B
+    </Option>
+    <Option>
+      Neither A nor B
+    </Option>
+  </MultipleChoice>
+
+</Box>

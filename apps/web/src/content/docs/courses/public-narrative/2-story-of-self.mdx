@@ -4,6 +4,9 @@ title: Story of Self
 import Links from '~/components/Links.astro'
 import Embed from '~/components/Embed.astro'
 import Checklist from '~/components/Checklist.astro'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
+import Box from '~/components/Box.astro'
 
 ## Why tell stories?
 
@@ -108,12 +111,25 @@ Now it’s your turn to practice writing your Story of Self. Download this works
   }]}
 />
 
-## Lesson Reflection
+<Box>
 
-<Links
-  items={[{
-    assessment: true,
-    href: "https://community.weavers.org/pages/lc-reflection-story-of-self",
-    text: "Reflect on this lesson"
-  }]}
-/>
+  ## Test your knowledge
+
+  What are the three elements of a Story of Self?
+
+  <MultipleChoice>
+    <Option>
+      Challenge, Path, Result
+    </Option>
+    <Option isCorrect>
+      Challenge, Choice, Outcome
+    </Option>
+    <Option>
+      Resilience, Power, Hope
+    </Option>
+    <Option>
+      None of the above
+    </Option>
+  </MultipleChoice>
+
+</Box>
