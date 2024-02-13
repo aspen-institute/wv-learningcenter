@@ -29,3 +29,7 @@
   --sl-color-text-invert: var(--yellow-joy);
   --sl-color-gray-2: #dcdcdc;
 }
+
+iframe[src^="https://calendly.com"] {
+  height: 100vh;
+}
