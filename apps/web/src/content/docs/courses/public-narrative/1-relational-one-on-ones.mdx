@@ -3,6 +3,9 @@ title: Relational One-on-Ones
 ---
 import Links from '~/components/Links.astro'
 import Embed from '~/components/Embed.astro'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
+import Box from '~/components/Box.astro'
 
 ## Introduction
 
@@ -53,12 +56,25 @@ As you listen to this model, think of the 5 steps of 1:1 you have learned. What 
   ]}
 />
 
-## Lesson Reflection
+<Box>
 
-<Links
-  items={[{
-    assessment: true,
-    href: "https://community.weavers.org/pages/lc-reflection-relational-1-1",
-    text: "Reflect on this lesson"
-  }]}
-/>
+  ## Test your knowledge
+
+  Which is **not** a key difference between mobilizing and organizing?
+
+  <MultipleChoice>
+    <Option>
+      Leadership in organizing is based on relationships
+    </Option>
+    <Option>
+      Organizers commit to working together on behalf of a common purpose
+    </Option>
+    <Option>
+      Relationships created during organizing fuels leadership, commitment, imagination
+    </Option>
+    <Option isCorrect>
+      Organizing is used only for political campaigns
+    </Option>
+  </MultipleChoice>
+
+</Box>
