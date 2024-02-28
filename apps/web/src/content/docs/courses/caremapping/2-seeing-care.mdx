@@ -1,9 +1,11 @@
 ---
 title: Seeing Care in Everyday Life
 ---
-import Box from '~/components/Box.astro'
+import MindfulnessPrompt from '~/components/MindfulnessPrompt.astro'
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
+
+import mindfulnessImage from './images/apple_store.jpg'
 
 What does “care” mean to you, in your life, based on your experiences? What is it that you _do_ in day-to-day life that contributes to the wellbeing of others, and likewise what is that others _do_ for you that contributes to your wellbeing? What have been significant actions of care over the course of your life? And how does the space you’re in remind you of such care?
 
@@ -11,13 +13,12 @@ These are the questions we’ll explore in this unit. Your observations will for
 
 <Embed src="https://player.vimeo.com/video/855998745" />
 
-<Box>
-
-## Mindfulness Prompt
-
-Before you do the exercises we have developed, take a moment to notice what is already in your mind. Pause and observe the care that surrounds you. Where do you notice acts of care in your daily life? Consider the different ways care manifests in your environment and who provides and receives such care.
-
-</Box>
+<MindfulnessPrompt
+  image={mindfulnessImage}
+  imageAlt='Shadows and light on outdoor floorboards, against a glass wall'
+>
+  Before you do the exercises we have developed, take a moment to notice what is already in your mind. Pause and observe the care that surrounds you. Where do you notice acts of care in your daily life? Consider the different ways care manifests in your environment and who provides and receives such care.
+</MindfulnessPrompt>
 
 ## Exercise: Recent Care Experiences
 

@@ -1,19 +1,20 @@
 ---
 title: Create Your First Atlas CareMap
 ---
-import Box from '~/components/Box.astro'
+import MindfulnessPrompt from '~/components/MindfulnessPrompt.astro'
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
 
+import mindfulnessImage from './images/palo_alto_baylands.jpg'
+
 As you draw and reflect on your first Atlas CareMap in this unit, creating a diagram of the caring relationships around you, keep in mind what you learned in the last unit about what “care” means to you.
 
-<Box>
-
-## Mindfulness Prompt
-
-Reflect on the most recent meaningful act of care you have received. Who was involved? What care did you receive? Were you simultaneously actively caring for any of your caregivers?
-
-</Box>
+<MindfulnessPrompt
+  image={mindfulnessImage}
+  imageAlt='A reflective wooden lake dock just after rain'
+>
+  Reflect on the most recent meaningful act of care you have received. Who was involved? What care did you receive? Were you simultaneously actively caring for any of your caregivers?
+</MindfulnessPrompt>
 
 ## Creating Your Atlas CareMap
 

@@ -1,0 +1,22 @@
+---
+import Box from '~/components/Box.astro'
+import { Image } from 'astro:assets'
+
+export interface Props {
+	title?: string,
+	image?: Image,
+	imageAlt?: string
+}
+
+const {
+	title = 'Mindfulness Prompt',
+	image,
+	imageAlt = 'A relaxing photograph'
+} = Astro.props
+---
+
+<Box>
+	<h2>{title}</h2>
+	{image && <Image src={image} alt={imageAlt} />}
+	<slot />
+</Box>
