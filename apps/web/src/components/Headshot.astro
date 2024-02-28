@@ -1,12 +1,22 @@
 ---
 import { Picture } from 'astro:assets'
+import type { ImageMetadata } from "astro";
 
-const props = Astro.props
+interface HeadshotProps {
+	src: ImageMetadata,
+	alt?: string,
+}
+
+const {
+	src,
+	alt = 'Headshot image',
+} = Astro.props as HeadshotProps
 ---
-<Picture class="headshot" {...props} />
+<Picture src={src} alt={alt} />
 
 <style>
-	.headshot {
+	/* Picture can't have class but img class applies */
+	img {
 		aspect-ratio: 1/1;
 		object-fit: cover;
 		border-radius: 50%;
