@@ -3,10 +3,11 @@ import { Picture } from 'astro:assets'
 
 const props = Astro.props
 ---
-<Picture class="headshot" {...props} />
+<Picture {...props} />
 
 <style>
-	.headshot {
+	/* Picture can't have class but img class applies */
+	img {
 		aspect-ratio: 1/1;
 		object-fit: cover;
 		border-radius: 50%;
