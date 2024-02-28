@@ -1,21 +1,22 @@
 ---
 title: Share Your Map
 ---
-import Box from '~/components/Box.astro'
+import MindfulnessPrompt from '~/components/MindfulnessPrompt.astro'
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
+
+import mindfulnessImage from './images/sierras_sunset.jpg'
 
 In the previous unit you drew and reflected on your first Atlas CareMap. In this unit, you’ll gain more insight by discussing your map and perspectives with others. This will likely lead you to redrawing your map.
 
 Begin with a mindfulness prompt.
 
-<Box>
-
-## Mindfulness Prompt
-
-Take a moment to imagine sharing your map with someone else. Who might you share it with? How do you feel about sharing it? What might you hope to gain from sharing?
-
-</Box>
+<MindfulnessPrompt
+  image={mindfulnessImage}
+  imageAlt='Sunset over a Sierra mountain range, sun just hitting the peaks against a bluegrey sky and mountainbase'
+>
+  Take a moment to imagine sharing your map with someone else. Who might you share it with? How do you feel about sharing it? What might you hope to gain from sharing?
+</MindfulnessPrompt>
 
 ## Sharing Your Atlas CareMap With Others
 
