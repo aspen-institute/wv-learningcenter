@@ -3,7 +3,10 @@ title: Who Do You Care For, and Who Cares for You?
 ---
 import Embed from '~/components/Embed.astro'
 import Box from '~/components/Box.astro'
+import MindfulnessPrompt from '~/components/MindfulnessPrompt.astro'
 import Links from '~/components/Links.astro'
+
+import mindfulnessImage from './images/bamboo.jpg'
 
 ## Introduction
 
@@ -23,15 +26,14 @@ For now, watch this video to get a quick overview of Atlas CareMaps.
 
 <Embed src="https://player.vimeo.com/video/261373006" />
 
-<Box>
+<MindfulnessPrompt
+  image={mindfulnessImage}
+  imageAlt='A dense bamboo forest'
+>
+  Throughout this learning module, you’ll find some mindfulness prompts. Take a moment to pause, reflect on what you have learned, and prepare your mind for what is to come.
 
-## Mindfulness Prompt
-
-Throughout this learning module, you’ll find some mindfulness prompts. Take a moment to pause, reflect on what you have learned, and prepare your mind for what is to come.
-
-For this first one, reflect on why organizing and managing care through a drawing of your care ecosystem is important to you. What are your motivations for learning this material? What benefits are you hoping for or expecting?
-
-</Box>
+  For this first one, reflect on why organizing and managing care through a drawing of your care ecosystem is important to you. What are your motivations for learning this material? What benefits are you hoping for or expecting?
+</MindfulnessPrompt>
 
 ## Impact
 
