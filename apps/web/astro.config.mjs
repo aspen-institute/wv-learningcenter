@@ -106,6 +106,7 @@ export default defineConfig({
 			customCss: [
 				'./src/styles/wv-animations.scss',
 				'./src/styles/wv-colors.scss',
+				'./src/styles/wv-layout.scss',
 				'./src/styles/wv-typography.scss',
 			],
 		}),

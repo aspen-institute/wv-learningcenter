@@ -1,11 +1,14 @@
 ---
 title: Seeing Care in Everyday Life
 ---
+import { Picture } from 'astro:assets'
 import MindfulnessPrompt from '~/components/MindfulnessPrompt.astro'
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
 
 import mindfulnessImage from './images/apple_store.jpg'
+import atHomeImage from './images/recent_care_experiences_home.png'
+import atWorkImage from './images/recent_care_experiences_work.png'
 
 What does “care” mean to you, in your life, based on your experiences? What is it that you _do_ in day-to-day life that contributes to the wellbeing of others, and likewise what is that others _do_ for you that contributes to your wellbeing? What have been significant actions of care over the course of your life? And how does the space you’re in remind you of such care?
 
@@ -26,22 +29,10 @@ For this exercise, review your last couple of days and write down a list of acti
 
 Here are two examples, one capturing care activities at home, and the other at work.
 
-### At Home
-
-- Helped dad organize meds
-- Calmed dad when he got frustrated
-- Dad made me coffee and a fresh batch of cookies
-- Ellen called to chat
-- Neighbor John mowed the lawn
-- Patty took dad to a show
-
-### At Work
-
-- Sue brought in coffee and donuts for the team
-- Henry commiserated on the contract delays
-- May improved my graphics
-- I mentored a couple of interns on career choices
-- I helped James plan his team's offsite
+<div class="soft-row">
+  <Picture src={atHomeImage} alt="Handwritten list: AT HOME / Helped dad organize meds / Calmed dad when he got frustrated / Dad made me coffee and a fresh batch of cookies / Ellen called to chat / Neighbor John mowed the lawn / Patty took dad to a show" />
+  <Picture src={atWorkImage} alt="Handwritten list: AT WORK / Sue brought in coffee and donuts for the team / Henry commiserated on the contract delays / May improved my graphics / I mentored a couple of interns on career choices / I helped James plan his team's offsite" />
+</div>
 
 <details>
 	<summary>**Need some help?** Here’s a refresher video.</summary>
