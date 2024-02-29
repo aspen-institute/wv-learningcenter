@@ -1,0 +1,7 @@
+.soft-row {
+  & > * {
+    margin: 0 !important;
+  }
+  display: flex;
+  gap: 1em;
+}
