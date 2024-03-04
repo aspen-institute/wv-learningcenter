@@ -3,6 +3,8 @@ title: Develop Your Pitch
 ---
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
 
 <Embed src="https://player.vimeo.com/video/919324228?h=f35f191b6f" />
 
@@ -65,3 +67,23 @@ When you have gathered the answers to these questions, you are ready to create a
     text: "Pitching Resource Sheet (PDF)"
   }]}
 />
+
+<Box>
+
+  ## Test your knowledge
+
+  For which of the following situations would you deliver a formal pitch?
+
+  <MultipleChoice>
+    <Option>
+      At a networking event
+    </Option>
+    <Option>
+      When introducing yourself to a prospective donor
+    </Option>
+    <Option isCorrect>
+      When you’ve been asked to give a presentation
+    </Option>
+  </MultipleChoice>
+
+</Box>

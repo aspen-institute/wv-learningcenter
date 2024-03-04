@@ -4,6 +4,8 @@ next: false
 ---
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
 
 <Embed src="https://player.vimeo.com/video/919324493?h=876f7e95e7" />
 
@@ -19,3 +21,26 @@ Your pitch will get better over time as you get more comfortable presenting, get
     text: "Tips from Expert Speakers (PDF)"
   }]}
 />
+
+<Box>
+
+  ## Test your knowledge
+
+  What should you do if a pitch goes badly?
+
+  <MultipleChoice>
+    <Option>
+      Never return to that audience
+    </Option>
+    <Option>
+      Change your phone number
+    </Option>
+    <Option>
+      Find someone else to be your organization’s representative
+    </Option>
+    <Option isCorrect>
+      Call it a learning experience and get back out there
+    </Option>
+  </MultipleChoice>
+
+</Box>

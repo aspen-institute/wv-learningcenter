@@ -4,6 +4,8 @@ next: false
 ---
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
 
 <Embed src="https://player.vimeo.com/video/919330746?h=271e0e4488" />
 
@@ -59,3 +61,29 @@ Collect data _about_ participants via:
 - Data collected anonymously or with client consent (grades, scores, etc)
 
 Carve out some time to reflect and celebrate, Weavers! Thanks for all you do in service to your communities.
+
+<Box>
+
+  ## Test your knowledge
+
+  Which of the following are common budget items for nonprofits?
+
+  <MultipleChoice>
+    <Option>
+      Staff
+    </Option>
+    <Option>
+      Equipment
+    </Option>
+    <Option>
+      Rent & Utilities
+    </Option>
+    <Option>
+      Technology
+    </Option>
+    <Option isCorrect>
+      All of the above
+    </Option>
+  </MultipleChoice>
+
+</Box>

@@ -3,6 +3,8 @@ title: Develop Your Central Story
 ---
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
 
 <Embed src="https://player.vimeo.com/video/919324068?h=316197c160" />
 
@@ -40,3 +42,23 @@ Finally, personalize the story. Why are you drawn to this work? How do you relat
 1. What?
 1. So what?
 1. Now what?
+
+<Box>
+
+  ## Test your knowledge
+
+  Who owns a nonprofit organization?
+
+  <MultipleChoice>
+    <Option isCorrect>
+      No one
+    </Option>
+    <Option>
+      The founder
+    </Option>
+    <Option>
+      The board of directors
+    </Option>
+  </MultipleChoice>
+
+</Box>

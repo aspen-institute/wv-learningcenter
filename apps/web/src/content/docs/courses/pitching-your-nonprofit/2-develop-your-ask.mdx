@@ -4,6 +4,8 @@ title: Develop Your Ask
 import Box from '~/components/Box.astro'
 import Embed from '~/components/Embed.astro'
 import Links from '~/components/Links.astro'
+import MultipleChoice from '~/components/MultipleChoice.astro'
+import Option from '~/components/Option.astro'
 
 <Embed src="https://player.vimeo.com/video/919324124?h=ea7d8e592b" />
 
@@ -64,4 +66,25 @@ Hold on to that third list you created of all the things you could accomplish wi
 First, because it will inspire you to keep putting together the building blocks of donations and volunteers and today’s work.
 
 Second, because if someone asks you are going to be ready with the answer.
+</Box>
+
+<Box>
+
+  ## Which of the following resources could be donated to your nonprofit?
+
+  <MultipleChoice>
+    <Option>
+      Time
+    </Option>
+    <Option>
+      Money
+    </Option>
+    <Option>
+      Supplies
+    </Option>
+    <Option isCorrect>
+      All of the above
+    </Option>
+  </MultipleChoice>
+
 </Box>
