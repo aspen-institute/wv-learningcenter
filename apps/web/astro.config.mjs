@@ -112,13 +112,13 @@ export default defineConfig({
 					autogenerate: { directory: 'courses/starting-a-nonprofit' },
 				},
 				{
-					label: 'Pitching a Nonprofit',
+					label: 'Pitching Your Nonprofit',
 					collapsed: true,
 					badge: {
 						text: 'Leadership',
 						variant: 'success'
 					},
-					autogenerate: { directory: 'courses/pitching-a-nonprofit' },
+					autogenerate: { directory: 'courses/pitching-your-nonprofit' },
 				},
 			],
 			customCss: [
