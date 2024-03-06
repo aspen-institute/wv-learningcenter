@@ -61,7 +61,7 @@ export default defineConfig({
 					collapsed: true,
 					badge: {
 						text: 'Coming Soon',
-						variant: 'success'
+						variant: 'note'
 					},
 					link: '#',
 					// autogenerate: { directory: 'courses/public-speaking' },
@@ -101,6 +101,24 @@ export default defineConfig({
 						variant: 'caution'
 					},
 					autogenerate: { directory: 'courses/caremapping' },
+				},
+				{
+					label: 'Starting a Nonprofit',
+					collapsed: true,
+					badge: {
+						text: 'Leadership',
+						variant: 'success'
+					},
+					autogenerate: { directory: 'courses/starting-a-nonprofit' },
+				},
+				{
+					label: 'Pitching Your Nonprofit',
+					collapsed: true,
+					badge: {
+						text: 'Leadership',
+						variant: 'success'
+					},
+					autogenerate: { directory: 'courses/pitching-your-nonprofit' },
 				},
 			],
 			customCss: [
