@@ -67,3 +67,11 @@
     background-color: var(--green-perseverance)
   }
 }
+
+.main-pane details > summary {
+  font-weight: bold;
+  background-color: var(--yellow-joy);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
