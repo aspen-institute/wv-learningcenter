@@ -60,11 +60,10 @@ export default defineConfig({
 					label: 'Public Speaking',
 					collapsed: true,
 					badge: {
-						text: 'Coming Soon',
-						variant: 'note'
+						text: 'Storytelling',
+						variant: 'tip'
 					},
-					link: '#',
-					// autogenerate: { directory: 'courses/public-speaking' },
+					autogenerate: { directory: 'courses/public-speaking' },
 				},
 				{
 					label: 'Facilitating Circles',
