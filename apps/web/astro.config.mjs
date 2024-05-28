@@ -137,7 +137,6 @@ export default defineConfig({
 					},
 					autogenerate: { directory: 'courses/grant-writing' },
 				},
-
 			],
 			customCss: [
 				'./src/styles/wv-animations.scss',
