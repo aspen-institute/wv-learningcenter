@@ -119,6 +119,25 @@ export default defineConfig({
 					},
 					autogenerate: { directory: 'courses/pitching-your-nonprofit' },
 				},
+				{
+					label: 'Creating Impact on Social Media',
+					collapsed: true,
+					badge: {
+						text: 'Leadership',
+						variant: 'success'
+					},
+					autogenerate: { directory: 'courses/creating-impact-on-social-media' },
+				},
+				{
+					label: 'Grant Writing',
+					collapsed: true,
+					badge: {
+						text: 'Leadership',
+						variant: 'success'
+					},
+					autogenerate: { directory: 'courses/grant-writing' },
+				},
+
 			],
 			customCss: [
 				'./src/styles/wv-animations.scss',
