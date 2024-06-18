@@ -41,12 +41,14 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		</Card>
 	</a>
 
-	<div class="course storytelling coming-soon">
+	{/*
+	<a href="/courses/public-speaking/" class="course storytelling">
 		<Card title="Public Speaking" icon="open-book">
       <p>Learn to become a confident public speaker through live workshops and solo practice.</p>
 			<p class="partner">In collaboration with Lightbox Collaborative</p>
 		</Card>
-	</div>
+	</a>
+	*/}
 
 </CardGrid>
 
@@ -109,10 +111,16 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		</Card>
 	</a>
 
-	<div class="course leadership coming-soon">
-		<Card title="Grantwriting" icon="pencil">
-			<p>New course coming soon!</p>
+	<a href="/courses/creating-impact-on-social-media/" class="course leadership">
+		<Card title="Creating Impact on Social Media" icon="pencil">
+			<p>Learn how and where to share your story on social media, the best ways to engage your audience, and how to be accessible and equitable when posting and managing your content.</p>
 		</Card>
-	</div>
+	</a>
+
+	<a href="/courses/grant-writing/" class="course leadership">
+		<Card title="Grant Writing" icon="pencil">
+			<p>Having a mission and vision is great; additionally, what propels an organization forward is the ability to translate that into story, to captivate a funder to believe as strongly in your work and in your community as you do.</p>
+		</Card>
+	</a>
 
 </CardGrid>

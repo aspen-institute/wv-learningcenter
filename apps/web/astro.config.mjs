@@ -56,16 +56,15 @@ export default defineConfig({
 					},
 					autogenerate: { directory: 'courses/public-narrative' },
 				},
-				{
-					label: 'Public Speaking',
-					collapsed: true,
-					badge: {
-						text: 'Coming Soon',
-						variant: 'note'
-					},
-					link: '#',
-					// autogenerate: { directory: 'courses/public-speaking' },
-				},
+				// {
+				// 	label: 'Public Speaking',
+				// 	collapsed: true,
+				// 	badge: {
+				// 		text: 'Storytelling',
+				// 		variant: 'tip'
+				// 	},
+				// 	autogenerate: { directory: 'courses/public-speaking' },
+				// },
 				{
 					label: 'Facilitating Circles',
 					collapsed: true,
@@ -119,6 +118,24 @@ export default defineConfig({
 						variant: 'success'
 					},
 					autogenerate: { directory: 'courses/pitching-your-nonprofit' },
+				},
+				{
+					label: 'Creating Impact on Social Media',
+					collapsed: true,
+					badge: {
+						text: 'Leadership',
+						variant: 'success'
+					},
+					autogenerate: { directory: 'courses/creating-impact-on-social-media' },
+				},
+				{
+					label: 'Grant Writing',
+					collapsed: true,
+					badge: {
+						text: 'Leadership',
+						variant: 'success'
+					},
+					autogenerate: { directory: 'courses/grant-writing' },
 				},
 			],
 			customCss: [
