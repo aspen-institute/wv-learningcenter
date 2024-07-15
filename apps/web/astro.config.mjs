@@ -66,6 +66,15 @@ export default defineConfig({
 				// 	autogenerate: { directory: 'courses/public-speaking' },
 				// },
 				{
+					label: 'Facilitation',
+					collapsed: true,
+					badge: {
+						text: 'Gatherings',
+						variant: 'danger'
+					},
+					autogenerate: { directory: 'courses/facilitation' },
+				},
+				{
 					label: 'Facilitating Circles',
 					collapsed: true,
 					badge: {
