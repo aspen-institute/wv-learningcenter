@@ -17,11 +17,11 @@ const siteURL = VERCEL_PREVIEW_SITE || 'https://learning.weavers.org/';
 export default defineConfig({
 	site: siteURL,
 	redirects: {
-		'/gathering/group-facilitation': '/courses/group-facilitation',
-		'/gathering/circle-facilitation': '/courses/circle-facilitation',
-		'/action/asset-based-community-development': '/courses/asset-based-community-development',
+		'/gathering/group-facilitation': '/courses/group-facilitation/',
+		'/gathering/circle-facilitation': '/courses/circle-facilitation/',
+		'/action/asset-based-community-development': '/courses/asset-based-community-development/',
 		'/storytelling/public-speaking': '/courses/public-speaking/',
-		'/storytelling/public-narrative': '/courses/public-narrative'
+		'/storytelling/public-narrative': '/courses/public-narrative/'
 	},
 	integrations: [
 		starlight({
