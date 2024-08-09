@@ -6,7 +6,7 @@
 	data-correct-label="Correct!"
 	data-incorrect-label="Try again."
 >
-	<form onsubmit="event.preventDefault()">
+	<form onsubmit="e => e.preventDefault()">
 		<ol class="opt-list not-content"><slot /></ol>
 		<div class="footer">
 			<button class="submit" type="submit" disabled>
