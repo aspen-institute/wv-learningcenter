@@ -66,7 +66,7 @@ export default defineConfig({
 					autogenerate: { directory: 'courses/public-speaking' },
 				},
 				{
-					label: 'Types of Gathering',
+					label: 'Types of Gatherings',
 					collapsed: true,
 					badge: {
 						text: 'Gatherings',
