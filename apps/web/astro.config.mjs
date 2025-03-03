@@ -66,6 +66,15 @@ export default defineConfig({
 					autogenerate: { directory: 'courses/public-speaking' },
 				},
 				{
+					label: 'Types of Gathering',
+					collapsed: true,
+					badge: {
+						text: 'Gatherings',
+						variant: 'danger'
+					},
+					autogenerate: { directory: 'courses/types-of-gathering' },
+				},
+				{
 					label: 'Facilitation',
 					collapsed: true,
 					badge: {
