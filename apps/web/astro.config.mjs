@@ -57,15 +57,6 @@ export default defineConfig({
 					autogenerate: { directory: 'courses/public-narrative' },
 				},
 				{
-					label: 'Public Speaking',
-					collapsed: true,
-					badge: {
-						text: 'Storytelling',
-						variant: 'tip'
-					},
-					autogenerate: { directory: 'courses/public-speaking' },
-				},
-				{
 					label: 'Types of Gatherings',
 					collapsed: true,
 					badge: {
@@ -73,15 +64,6 @@ export default defineConfig({
 						variant: 'danger'
 					},
 					autogenerate: { directory: 'courses/types-of-gathering' },
-				},
-				{
-					label: 'Facilitation',
-					collapsed: true,
-					badge: {
-						text: 'Gatherings',
-						variant: 'danger'
-					},
-					autogenerate: { directory: 'courses/facilitation' },
 				},
 				{
 					label: 'Facilitating Circles',
