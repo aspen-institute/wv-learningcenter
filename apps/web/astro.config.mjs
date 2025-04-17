@@ -72,7 +72,7 @@ export default defineConfig({
 						text: 'Gatherings',
 						variant: 'danger'
 					},
-					autogenerate: { directory: 'courses/types-of-gathering' },
+					autogenerate: { directory: 'courses/types-of-gatherings' },
 				},
 				{
 					label: 'Facilitation',
