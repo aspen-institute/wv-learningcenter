@@ -56,15 +56,15 @@ export default defineConfig({
 					},
 					autogenerate: { directory: 'courses/public-narrative' },
 				},
-				// {
-				// 	label: 'Public Speaking',
-				// 	collapsed: true,
-				// 	badge: {
-				// 		text: 'Storytelling',
-				// 		variant: 'tip'
-				// 	},
-				// 	autogenerate: { directory: 'courses/public-speaking' },
-				// },
+				{
+					label: 'Types of Gatherings',
+					collapsed: true,
+					badge: {
+						text: 'Gatherings',
+						variant: 'danger'
+					},
+					autogenerate: { directory: 'courses/types-of-gathering' },
+				},
 				{
 					label: 'Facilitating Circles',
 					collapsed: true,
