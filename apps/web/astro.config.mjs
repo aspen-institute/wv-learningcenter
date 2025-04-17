@@ -84,15 +84,6 @@ export default defineConfig({
 					autogenerate: { directory: 'courses/facilitation' },
 				},
 				{
-					label: 'Types of Gatherings',
-					collapsed: true,
-					badge: {
-						text: 'Gatherings',
-						variant: 'danger',
-					},
-					autogenerate: { directory: 'courses/types-of-gatherings' },
-				},
-				{
 					label: 'Facilitating Circles',
 					collapsed: true,
 					badge: {
