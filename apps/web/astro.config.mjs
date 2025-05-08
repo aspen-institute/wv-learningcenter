@@ -20,7 +20,7 @@ export default defineConfig({
 		'/gathering/group-facilitation': '/courses/group-facilitation/',
 		'/gathering/circle-facilitation': '/courses/circle-facilitation/',
 		'/action/asset-based-community-development': '/courses/asset-based-community-development/',
-		'/storytelling/public-speaking': '/courses/public-speaking/',
+//	'/storytelling/public-speaking': '/courses/public-speaking/',
 		'/storytelling/public-narrative': '/courses/public-narrative/'
 	},
 	integrations: [
